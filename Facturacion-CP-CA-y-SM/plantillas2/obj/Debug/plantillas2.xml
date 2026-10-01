@@ -1,0 +1,1056 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+plantillas2
+</name>
+</assembly>
+<members>
+<member name="F:plantillas2.login.TxtUsuario">
+	<summary>
+Control TxtUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.login.TxtPass">
+	<summary>
+Control TxtPass.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.login.BtnIniciarSesion">
+	<summary>
+Control BtnIniciarSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.ScriptManager1">
+	<summary>
+Control ScriptManager1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lbNombres">
+	<summary>
+Control lbNombres.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.rfNombre">
+	<summary>
+Control rfNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lpapPaterno">
+	<summary>
+Control lpapPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lbapMaterno">
+	<summary>
+Control lbapMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.txtNombres">
+	<summary>
+Control txtNombres.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.TxtPapellido">
+	<summary>
+Control TxtPapellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.TxtSapellido">
+	<summary>
+Control TxtSapellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lblnacionalidad">
+	<summary>
+Control Lblnacionalidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.LblEdoNacimiento">
+	<summary>
+Control LblEdoNacimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.LblFechaNacimeinto">
+	<summary>
+Control LblFechaNacimeinto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDNacionalidad">
+	<summary>
+Control DDNacionalidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDEdoNacimiento">
+	<summary>
+Control DDEdoNacimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDdiasfecha">
+	<summary>
+Control DDdiasfecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDmesesFecha">
+	<summary>
+Control DDmesesFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDañosFecha">
+	<summary>
+Control DDañosFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lblcurp">
+	<summary>
+Control lblcurp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.RequiredFieldValidator1">
+	<summary>
+Control RequiredFieldValidator1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lblGenero">
+	<summary>
+Control lblGenero.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lbldireccion">
+	<summary>
+Control Lbldireccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.RequiredFieldValidator2">
+	<summary>
+Control RequiredFieldValidator2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Txtcurp">
+	<summary>
+Control Txtcurp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.rbhombre">
+	<summary>
+Control rbhombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.rbrdmujer">
+	<summary>
+Control rbrdmujer.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.txtDireccion">
+	<summary>
+Control txtDireccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lblestado">
+	<summary>
+Control Lblestado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lblmunicipio">
+	<summary>
+Control lblmunicipio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lbllocalidad">
+	<summary>
+Control lbllocalidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Regoficial">
+	<summary>
+Control Regoficial.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDestadosoficial">
+	<summary>
+Control DDestadosoficial.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDmunicipios">
+	<summary>
+Control DDmunicipios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDlocalidades">
+	<summary>
+Control DDlocalidades.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lblcodigopostal">
+	<summary>
+Control Lblcodigopostal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lblestadocivil">
+	<summary>
+Control Lblestadocivil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lblocupacion">
+	<summary>
+Control Lblocupacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Txtcodigopostal">
+	<summary>
+Control Txtcodigopostal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDEstadoCivil">
+	<summary>
+Control DDEstadoCivil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.DDocupacion">
+	<summary>
+Control DDocupacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lblTelefonoFijo">
+	<summary>
+Control lblTelefonoFijo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lbTelefonomovil">
+	<summary>
+Control lbTelefonomovil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.lbmail">
+	<summary>
+Control lbmail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.rfEmail">
+	<summary>
+Control rfEmail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.txtTelefonoFijo">
+	<summary>
+Control txtTelefonoFijo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.txtTelefonoMovil">
+	<summary>
+Control txtTelefonoMovil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.txtEmail">
+	<summary>
+Control txtEmail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lblcontacto">
+	<summary>
+Control Lblcontacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.Lbltelefonocontacto">
+	<summary>
+Control Lbltelefonocontacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.TxtNombreContacto">
+	<summary>
+Control TxtNombreContacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.DatosPaciente.TxtTelefonoContacto">
+	<summary>
+Control TxtTelefonoContacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.ScriptManager1">
+	<summary>
+Control ScriptManager1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lbNombres">
+	<summary>
+Control lbNombres.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.rfNombre">
+	<summary>
+Control rfNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lpapPaterno">
+	<summary>
+Control lpapPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lbapMaterno">
+	<summary>
+Control lbapMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.txtNombres">
+	<summary>
+Control txtNombres.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.TxtPapellido">
+	<summary>
+Control TxtPapellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.TxtSapellido">
+	<summary>
+Control TxtSapellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lblnacionalidad">
+	<summary>
+Control Lblnacionalidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.LblEdoNacimiento">
+	<summary>
+Control LblEdoNacimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.LblFechaNacimeinto">
+	<summary>
+Control LblFechaNacimeinto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDNacionalidad">
+	<summary>
+Control DDNacionalidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDEdoNacimiento">
+	<summary>
+Control DDEdoNacimiento.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDdiasfecha">
+	<summary>
+Control DDdiasfecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDmesesFecha">
+	<summary>
+Control DDmesesFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDañosFecha">
+	<summary>
+Control DDañosFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lblcurp">
+	<summary>
+Control lblcurp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.RequiredFieldValidator1">
+	<summary>
+Control RequiredFieldValidator1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lblGenero">
+	<summary>
+Control lblGenero.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lbldireccion">
+	<summary>
+Control Lbldireccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.RequiredFieldValidator2">
+	<summary>
+Control RequiredFieldValidator2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Txtcurp">
+	<summary>
+Control Txtcurp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.rbhombre">
+	<summary>
+Control rbhombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.rbrdmujer">
+	<summary>
+Control rbrdmujer.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.txtDireccion">
+	<summary>
+Control txtDireccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lblestado">
+	<summary>
+Control Lblestado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lblmunicipio">
+	<summary>
+Control lblmunicipio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lbllocalidad">
+	<summary>
+Control lbllocalidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Regoficial">
+	<summary>
+Control Regoficial.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDestadosoficial">
+	<summary>
+Control DDestadosoficial.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDmunicipios">
+	<summary>
+Control DDmunicipios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDlocalidades">
+	<summary>
+Control DDlocalidades.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lblcodigopostal">
+	<summary>
+Control Lblcodigopostal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lblestadocivil">
+	<summary>
+Control Lblestadocivil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lblocupacion">
+	<summary>
+Control Lblocupacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Txtcodigopostal">
+	<summary>
+Control Txtcodigopostal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDEstadoCivil">
+	<summary>
+Control DDEstadoCivil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.DDocupacion">
+	<summary>
+Control DDocupacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lblTelefonoFijo">
+	<summary>
+Control lblTelefonoFijo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lbTelefonomovil">
+	<summary>
+Control lbTelefonomovil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.lbmail">
+	<summary>
+Control lbmail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.rfEmail">
+	<summary>
+Control rfEmail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.txtTelefonoFijo">
+	<summary>
+Control txtTelefonoFijo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.txtTelefonoMovil">
+	<summary>
+Control txtTelefonoMovil.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.txtEmail">
+	<summary>
+Control txtEmail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lblcontacto">
+	<summary>
+Control Lblcontacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.Lbltelefonocontacto">
+	<summary>
+Control Lbltelefonocontacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.TxtNombreContacto">
+	<summary>
+Control TxtNombreContacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.TxtTelefonoContacto">
+	<summary>
+Control TxtTelefonoContacto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:plantillas2.cookies.ssidsesion">
+******* sesion 
+
+</member><member name="P:plantillas2.cookies.rememberpass">
+rememberme
+
+</member><member name="P:plantillas2.cookies.cnfempresa">
+configuracion
+
+</member><member name="P:plantillas2.cookies.mirequest">
+******* page 
+
+</member><member name="F:plantillas2.BuscarPaciente.LblNombres">
+	<summary>
+Control LblNombres.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarPaciente.TxbNombre">
+	<summary>
+Control TxbNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarPaciente.LblPaterno">
+	<summary>
+Control LblPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarPaciente.TxbPaterno">
+	<summary>
+Control TxbPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarPaciente.LblMaterno">
+	<summary>
+Control LblMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarPaciente.TxbMaterno">
+	<summary>
+Control TxbMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarPaciente.LstBoxPacientes">
+	<summary>
+Control LstBoxPacientes.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarPaciente.BtnBuscarPaciente">
+	<summary>
+Control BtnBuscarPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarCitaPaciente.ControlDatosPaciente">
+	<summary>
+Control ControlDatosPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarCitaPaciente.CBPcopia">
+	<summary>
+Control CBPcopia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscarCitaPaciente.HistorialCitasPaciente">
+	<summary>
+Control HistorialCitasPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.LblNombres2">
+	<summary>
+Control LblNombres2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.TxbNombre2">
+	<summary>
+Control TxbNombre2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.LblPaterno2">
+	<summary>
+Control LblPaterno2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.TxbPaterno2">
+	<summary>
+Control TxbPaterno2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.LblMaterno2">
+	<summary>
+Control LblMaterno2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.TxbMaterno2">
+	<summary>
+Control TxbMaterno2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.ListBox12">
+	<summary>
+Control ListBox12.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.BuscadorPaciente.BtnBuscarPaciente">
+	<summary>
+Control BtnBuscarPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:plantillas2.My.MyWebExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:plantillas2.My.MyWebExtension.User">
+	<summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:plantillas2.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:plantillas2.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:plantillas2.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="T:plantillas2.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:plantillas2.Site1.head">
+	<summary>
+Control head.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.Site1.LblUsuario">
+	<summary>
+Control LblUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.Site1.LblUsuarioCuadro">
+	<summary>
+Control LblUsuarioCuadro.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.Site1.LblUsuarioPuesto">
+	<summary>
+Control LblUsuarioPuesto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.Site1.LblUsuarioBarraLateral">
+	<summary>
+Control LblUsuarioBarraLateral.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:plantillas2.Site1.ContentPlaceHolder1">
+	<summary>
+Control ContentPlaceHolder1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>

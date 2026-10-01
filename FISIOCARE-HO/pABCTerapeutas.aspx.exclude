@@ -1,0 +1,895 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="ABCTerapeutas.aspx.vb" Inherits="ABCTerapeutas" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style>
+        /* Separación del label y el icheck */
+
+        .radio label {
+            padding-left: 35px;
+            padding-right: 10px;
+        }
+
+        @keyframes click-wave {
+          0% {
+            height: 40px;
+            width: 40px;
+            opacity: 0.35;
+            position: relative;
+          }
+          100% {
+            height: 200px;
+            width: 200px;
+            margin-left: -80px;
+            margin-top: -80px;
+            opacity: 0;
+          }
+        }
+
+    input[type='radio'],input[type='checkbox'] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      -ms-appearance: none;
+      -o-appearance: none;
+      appearance: none;
+      position: relative;
+      /*top: 13.33333px;*/
+      right: 0;
+      bottom: 0;
+      left: 0;
+      height: 20px;
+      width: 20px;
+      transition: all 0.15s ease-out 0s;
+      background: #cbd1d8;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      margin-right: 0.5rem;
+      outline: none;
+      position: relative;
+      z-index: 1000;
+    }
+    input[type='radio']:hover, input[type='checkbox']:hover {
+      background: #9faab7;
+    }
+    input[type='radio']:checked, input[type='checkbox']:checked {
+      background: #00a65a;
+    }
+    input[type='radio']:checked::before, input[type='checkbox']:checked::before {
+      height: 20px;
+      width: 20px;
+      position: absolute;
+      content: '✔';
+      display: inline-block;
+      font-size: 12px;
+      text-align: center;
+      line-height: 20px;
+    }
+    input[type='radio']:checked::after, input[type='checkbox']:checked::after {
+      -webkit-animation: click-wave 0.65s;
+      -moz-animation: click-wave 0.65s;
+      animation: click-wave 0.65s;
+      background: #40e0d0;
+      content: '';
+      display: block;
+      position: relative;
+      z-index: 100;
+    }
+    input[type='radio'] {
+      border-radius: 50% !important;
+    }
+    input[type='radio']::after {
+      border-radius: 50% !important;
+    }
+    input[type='checkbox'] {
+      border-radius: 10% !important;
+    }
+    input[type='checkbox']::after {
+      border-radius: 10% !important;
+    }
+
+    input[type=checkbox], input[type=radio] {
+        margin: 0px 5px -5px !important;
+    }
+    input[type=checkbox]:focus, input[type=radio]:focus {
+        outline: none !important;
+    }
+
+    .wrapper-signature {
+  position: relative;
+  width: 400px;
+  height: 200px;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom:20px;
+}
+
+.signature-pad {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width:400px;
+  height:200px;
+  background-color: white;
+  border:1px solid #000;
+}
+    </style>
+
+     <script >
+         function ValSoloLetrasEspacioBlanco(e) {
+             tecla = (document.all) ? e.keyCode : e.which;
+             if (tecla == 8) return true;
+             patron = /[A-Za-z Ññ]/;
+             te = String.fromCharCode(tecla);
+             return patron.test(te);
+         }
+         function ValSoloLetrasEspacioBlancoNumeros(e) {
+             tecla = (document.all) ? e.keyCode : e.which;
+             if (tecla == 8) return true;
+             patron = /[A-Za-z Ññ.@-_-0-9]/;
+             te = String.fromCharCode(tecla);
+             return patron.test(te);
+         }
+         window.onload = function () {
+             $('input[type="checkbox"]').addClass("flat-red");
+             //Flat red color scheme for iCheck
+             $('input[type="checkbox"].flat-red, input[type="radio"].flat-red').iCheck({
+                 checkboxClass: 'icheckbox_flat-green',
+                 radioClass: 'iradio_flat-green'
+             });
+         }
+    </script>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <section class="content-header">
+        <h1>Usuarios
+            <small>Agregar, modificar, eliminar</small>
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="Agenda.aspx"><i class="fa fa-home"></i>Inicio</a></li>
+            <li class="active"><i class="fa fa-users"></i>Usuarios</li>
+        </ol>
+    </section>
+
+    <section class="content">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="box box-info">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Usuarios</h3>
+                    </div>
+                    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+                        <ContentTemplate>
+                            <div class="box-body">
+                                <%--------------------- Avisos en pantalla-------------------------------%>
+                                <asp:Panel ID="PanelAvisos" runat="server" Visible="false">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="alert alert-success alert-dismissable">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-close"></i>Cerrar</button>
+                                                <h4>
+                                                    <asp:Label ID="LblMensajeAviso" runat="server"></asp:Label></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+                                <asp:Panel ID="PanelDesicion" runat="server" Visible="false">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="alert alert-info alert-dismissable">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-close"></i>Cerrar</button>
+                                                <h4>
+                                                    <asp:Label ID="LblMostarDecision" runat="server" Text="Label"></asp:Label></h4>
+                                                <button type="button" class="btn btn-success" runat="server" onserverclick="BtnSi_Click"><i class="fa fa-check"></i>Sí</button>
+                                                <button type="button" class="btn btn-danger" runat="server" onserverclick="BtnNo_Click"><i class="fa fa-close"></i>No</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+
+                                <asp:Panel ID="PanelCritico" runat="server" Visible="false">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="alert alert-danger alert-dismissable">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-close"></i>Cerrar</button>
+                                                <h4>
+                                                    <asp:Label ID="LblMensajeCritico" runat="server" Text="Label"></asp:Label>></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+
+                                <asp:Panel ID="PanelAdvertencia" runat="server" Visible="false">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                            <div class="alert alert-warning alert-dismissable">
+                                                <button type="button" class="close" data-dismiss="alert"><i class="fa fa-close"></i>Cerrar</button>
+                                                <h4>
+                                                    <asp:Label ID="LblMensajeAdvertencia" runat="server" Text="Label"></asp:Label></h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </asp:Panel>
+                                <%--    ---------------------------------------------------------------------------------------------%>
+                                
+                                    <!--HACK-->
+                                    <!--img src="dist/img/hack.jpg" onload="Hack()" class="hidden" />
+                                    <!----------------------------------->
+                                
+                                
+                                <div style="margin: 10px 0px">
+                                    <button type="button" class="btn btn-block btn-primary" data-toggle="modal" data-target="#Alta">
+                                        Agregar usuario <i class="fa fa-plus"></i>
+                                    </button>
+                                </div>
+                                <asp:GridView ID="GdUsuarios" runat="server" class="table table-bordered table-striped" AutoGenerateColumns="False">
+                                    <Columns>
+                                        <asp:BoundField DataField="codigoUsuario" HeaderText="Código Usuario" >
+                                        <ControlStyle CssClass="hidden-xs hidden-sm" />
+                                        <HeaderStyle CssClass="hidden-xs hidden-sm" />
+                                        <ItemStyle CssClass="hidden-xs hidden-sm" />
+                                        </asp:BoundField>
+                                        <asp:BoundField DataField="nombre" HeaderText="Nombre" />
+                                        <asp:BoundField DataField="login" HeaderText="Usuario" >
+                                        <ControlStyle CssClass="hidden-xs " />
+                                        <HeaderStyle CssClass="hidden-xs" />
+                                        <ItemStyle CssClass="hidden-xs" />
+                                        </asp:BoundField>
+                                        <asp:BoundField DataField="rol" HeaderText="Tipo de Cuenta" >
+                                        <ControlStyle CssClass="hidden-xs hidden-sm" />
+                                        <HeaderStyle CssClass="hidden-xs hidden-sm" />
+                                        <ItemStyle CssClass="hidden-xs hidden-sm" />
+                                        </asp:BoundField>
+                                        <asp:ButtonField ButtonType="Button" HeaderText="Editar" Text="Editar" CommandName="Editar" ControlStyle-CssClass="btn btn-block btn-success">
+                                            <ControlStyle CssClass="btn btn-block btn-success"></ControlStyle>
+                                        </asp:ButtonField>
+                                        <asp:ButtonField ButtonType="Button" HeaderText="Borrar" Text="Borrar" CommandName="Borrar" ControlStyle-CssClass="btn btn-block btn-danger">
+                                            <ControlStyle CssClass="btn btn-block btn-danger hidden-xs "></ControlStyle>
+                                        <HeaderStyle CssClass="hidden-xs" />
+                                        <ItemStyle CssClass="hidden-xs" />
+                                        </asp:ButtonField>
+                                    </Columns>
+                                </asp:GridView>
+                            </div>
+                        </ContentTemplate>
+                    </asp:UpdatePanel>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Modal editar Usuario-->
+    <div id="Editar_1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Editar Usuario</h4>
+                </div>
+                <asp:UpdatePanel ID="UpdatePanel1" runat="server" UpdateMode="Always">
+                    <ContentTemplate>
+                        <div class="modal-body">
+                            <div class="form-body">
+                                <asp:HiddenField ID="Hdpregunta" runat="server" />
+                                <asp:HiddenField ID="HdUsuarioEdit" runat="server" />
+                                <div class="form-group">
+                                    <label class="col-md-4" for="codigo">Nombre de usuario o correo</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <asp:TextBox class="form-control" ID="txtLogin" placeholder="Login" runat="server" MaxLength="50" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtLogin" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Contraseña</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <asp:TextBox class="form-control" runat="server" ID="txtPass" placeholder="******"  MaxLength="15" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPass" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Nombre</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-font"></i></span>
+                                        <asp:TextBox runat="server" class="form-control" ID="txtNombre" placeholder="Nombre" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtNombre" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Apellido Paterno</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-font"></i></span>
+                                        <asp:TextBox class="form-control" ID="txtPaterno" placeholder="Paterno" runat="server" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtPaterno" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Apellido Materno</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-font"></i></span>
+                                        <asp:TextBox class="form-control" ID="txtMaterno" placeholder="Materno" runat="server" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4" for="codigo">Correo Electronico</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                        <asp:TextBox class="form-control" ID="txtCorreoE" placeholder="correo@agemed.com.mx" runat="server" MaxLength="50" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)"></asp:TextBox>
+                                        <%--<asp:RequiredFieldValidator ID="RequiredFieldValidator14" runat="server" ControlToValidate="txtCorreoE" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>--%>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Especialidad</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <asp:TextBox class="form-control" ID="txtEspecialidad" placeholder="Especialidad" runat="server" Style="text-transform: uppercase;" MaxLength="40" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtEspecialidad" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Cédula</label>
+                                    <div class="input-group col-md-8">
+                                        <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                        <asp:TextBox class="form-control" ID="txtCedula" placeholder="Cédula" runat="server" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txtCedula" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label class="col-md-4">Nivel de usuario</label>
+                                    <div class="input-group col-md-8">
+                                        <select class="form-control" id="rol1" name="nivel" runat="server">
+                                            <option value="1">Radiólogo</option>
+                                            <option value="2">Recepcionista</option>
+                                            <option value="3">Doctor</option>
+                                            <option value="4">Cirujano</option>
+                                            <option value="5">Anestesiologo</option>
+                                            <option value="6">Ayudante</option>
+                                            <option value="7">Enfermero</option>
+                                            <option value="8">Agente de Servicios</option>
+                                        </select>
+                                    </div>
+                                </div
+                                 <div class="form-group">
+                                    <label class="col-md-4">Permisos Pagos</label>
+                                    <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxPagose" runat="server" Text =" Pagos" />
+                                            </div>
+                                             <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxEditarPagose" runat="server" Text =" Editar Pagos" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxBorrarAbonos" runat="server" Text =" Borrar pagos realizados" Checked="true"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxAgregarConceptose" runat="server" Text =" Agregar concepto de pago" Checked="true"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBorraroConceptose" runat="server" Text =" Borrar concepto de pago" Checked="true"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <label class="col-md-4">Permisos Menú</label>
+                                    <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxExpedientee" runat="server"  Text =" Expediente"/> 
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxConfiguracione" runat="server" Text =" Configuración" />
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxFacturacione" runat="server" Text =" Facturación" /> 
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxReportese" runat="server" Text =" Reportes" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr />
+                                <div class="form-group">
+                                    <label class="col-md-4">Expediente finalizado</label>
+                                    <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="efe_1_2" runat="server" Text ="Modificar expediente"  Checked="true"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="eft_2_2" runat="server" Text ="Modificar etapa"  Checked="true"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                             <label class="col-md-4">Agregar diagnósticos personales</label>
+                                   <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxPDiagnosticoPEdit" runat="server" Text ="Modificar Diagnóstico" Checked="true"/>
+                                            </div>
+                                    </div>
+                              </div>
+                         </div>
+
+                                 <div class="form-group">
+                             <label class="col-md-4">Bloqueo de Horarios en Agenda</label>
+                                   <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxPBloqueoEdit" runat="server" Text ="Activar/Desactivar" Checked="true"/>
+                                            </div>
+                                    </div>
+                              </div>
+                         </div>
+                        
+                        <div class="form-group">
+                             <label class="col-md-4">Agrupar Conceptos para Facturacion</label>
+                                   <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxPAgruparConceptosEdit" runat="server" Text ="Activar/Desactivar" Checked="true"/>
+                                            </div>
+                                    </div>
+                              </div>
+                         </div>
+
+
+
+
+                        <div class="form-group">
+                            <input class="form-control hidden" id="firma_editar" value="" runat="server" />
+                        </div>
+
+                        <div class="form-group contenedor_firma_editar">
+                            <label class="col-md-4">Firma</label>
+                            <div class="input-group col-md-8">
+                                <div class="wrapper-signature">
+                                  <canvas id="canvas_firma_editar" class="signature-pad" width="400" height="200"></canvas>
+                                </div>
+                                <div style="margin: -20px 0 20px 0;" id="mensaje_canvas_editar">
+                                    
+                                </div>
+                                <button type="button" id="draw_editar" class="btn btn-success"><i class="fa fa-pencil"></i> Dibujar</button>
+                                <button type="button" id="erase_editar" class="btn btn-warning"><i class="fa fa-eraser"></i> Borrar</button>
+                                <button type="button" id="clear_editar" class="btn btn-info"><i class="fa fa-close"></i> Limpiar</button>
+                            </div>
+                       </div>
+
+
+
+                                
+                                
+                        </div>
+                            <div class="modal-footer">
+                                <input type="hidden" name="Editar" value="1">
+                                <asp:HiddenField ID="LoginEditar" runat="server" />
+                                <button type="button" class="btn btn-success" data-dismiss="modal" runat="server" onserverclick="BtnGuardarEdit_Click" causesvalidation="true" validationgroup="gDatos">
+                                    <i class="fa fa-save"></i> Guardar
+                                </button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal" aria-hidden="true"><i class="fa fa-close"></i> Cancelar</button>
+                            </div>
+                        </div>
+                    </ContentTemplate>
+                </asp:UpdatePanel>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal Nuevo Usuario-->
+    <div id="Alta" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Nuevo usuario</h4>
+                </div>
+
+                <div class="modal-body">
+                    <div class="form-body">
+                        <div class="form-group">
+                            <label class="col-md-4" for="codigo">Nombre de usuario o correo</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <asp:TextBox ID="txtLogin2" runat="server" class="form-control" placeholder="usuario@agemed.com.mx" MaxLength="50" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtLogin2" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Contraseña</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <asp:TextBox class="form-control" placeholder="******" ID="txtPass2" runat="server"  MaxLength="15" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)" ></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="txtPass2" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Nombre</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-font"></i></span>
+                                <asp:TextBox class="form-control" ID="txtNombre2" placeholder="Nombre" runat="server" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="txtNombre2" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Apellido Paterno</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-font"></i></span>
+                                <asp:TextBox class="form-control" ID="txtPaterno2" placeholder="Paterno" runat="server" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="txtPaterno2" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Apellido Materno</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-font"></i></span>
+                                <asp:TextBox class="form-control" ID="txtMaterno2" placeholder="Materno" runat="server" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="txtMaterno2" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4" for="codigo">Correo Electronico</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <asp:TextBox ID="txtCorreoA" runat="server" class="form-control" placeholder="correo@agemed.com.mx" MaxLength="50" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator15" runat="server" ControlToValidate="txtCorreoA" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Especialidad</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <asp:TextBox class="form-control" ID="txtEspecialidad2" placeholder="Especialidad" runat="server" Style="text-transform: uppercase;" MaxLength="40" onkeypress="return ValSoloLetrasEspacioBlanco(event)"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="txtEspecialidad2" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Cédula</label>
+                            <div class="input-group col-md-8">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <asp:TextBox class="form-control" ID="txtCedula2" placeholder="Cédula" runat="server" Style="text-transform: uppercase;" MaxLength="35" onkeypress="return ValSoloLetrasEspacioBlancoNumeros(event)"></asp:TextBox>
+                                <asp:RequiredFieldValidator ID="RequiredFieldValidator13" runat="server" ControlToValidate="txtCedula2" Display="Dynamic" SetFocusOnError="True" ValidationGroup="gNuevoDatos"><span class="mensaje-error">Este campo es obligatorio</span></asp:RequiredFieldValidator>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Nivel de usuario</label>
+                            <div class="input-group col-md-8">
+                                <select class="form-control" runat="server" id="rol2" name="nivel">
+                                  <%--  <option value="1">Radiólogo</option>
+                                    <option value="2">Recepcionista</option>
+                                    <option value="3">Doctor</option>
+                                    <option value="7">Enfermero</option>--%>
+                                     <option value="1">Radiólogo</option>
+                                     <option value="2">Recepcionista</option>
+                                     <option value="3">Doctor</option>
+                                     <option value="4">Cirujano</option>
+                                     <option value="5">Anestesiologo</option>
+                                     <option value="6">Ayudante</option>
+                                     <option value="7">Enfermero</option>
+                                     <option value="8">Agente de Servicios</option>
+                                </select>
+
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-4">Permisos Pagos</label>
+                            <div class="input-group col-md-8">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxPagosg" runat="server" Text =" Pagos" Checked="true"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxEditarPagosg" runat="server" Text =" Editar Pagos" Checked="true" />
+                                    </div>                                    
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxBorrarAbonosg" runat="server" Text =" Borrar pagos realizados" Checked="true"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxAgregarConceptosg" runat="server" Text =" Agregar concepto de Pago" Checked="true"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxBorrarConceptosg" runat="server" Text =" Borrar concepo de pago" Checked="true"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-group">
+                            <label class="col-md-4">Permisos Menú</label>
+                            <div class="input-group col-md-8">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxExpedienteg" runat="server"  Text =" Expediente" Checked="true"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxConfiguraciong" runat="server" Text =" Configuración" Checked="true" />
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxFacturaciong" runat="server" Text =" Facturación" Checked="true"/>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <asp:CheckBox ID="ChkBoxReportesg" runat="server" Text =" Reportes" Checked="true"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr />
+                        <div class="form-group">
+                             <label class="col-md-4">Expediente finalizado</label>
+                                   <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="efe_1" runat="server" Text ="Modificar expediente" Checked="true"/>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="eft_2" runat="server" Text ="Modificar etapa" Checked="true"/>
+                                          </div>
+                                    </div>
+                              </div>
+                         </div>
+                        <div class="form-group">
+                             <label class="col-md-4">Agregar diagnósticos personales</label>
+                                   <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxPDiagnosticoPAlta" runat="server" Text ="Agregar Diagnóstico" Checked="true"/>
+                                            </div>
+                                    </div>
+                              </div>
+                         </div>
+                         <div class="form-group">
+                             <label class="col-md-4">Bloqueo de Horarios en Agenda</label>
+                                   <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxPBloqueoAlta" runat="server" Text ="Activar/Desactivar" Checked="true"/>
+                                            </div>
+                                    </div>
+                              </div>
+                         </div>
+                         <div class="form-group">
+                             <label class="col-md-4">Agrupar Conceptos para Facturacion</label>
+                                   <div class="input-group col-md-8">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <asp:CheckBox ID="ChkBoxPAgruparConceptosAlta" runat="server" Text ="Activar/Desactivar" Checked="true"/>
+                                            </div>
+                                    </div>
+                              </div>
+                         </div>
+                        <div class="form-group">
+                            <input class="form-control hidden" id="firma_alta" value="" runat="server" />
+                        </div>
+                        <div class="form-group contenedor_firma_alta">
+                            <label class="col-md-4">Firma</label>
+                            <div class="input-group col-md-8">
+                                <div class="wrapper-signature">
+                                  <canvas id="canvas_firma_alta" class="signature-pad" width="400" height="200"></canvas>
+                                </div>
+                                <div style="margin: -20px 0 20px 0;" id="mensaje_canvas_alta">
+                                    
+                                </div>
+                                <button type="button" id="draw_alta" class="btn btn-success"><i class="fa fa-pencil"></i> Dibujar</button>
+                                <button type="button" id="erase_alta" class="btn btn-warning"><i class="fa fa-eraser"></i> Borrar</button>
+                                <button type="button" id="clear_alta" class="btn btn-info"><i class="fa fa-close"></i> Limpiar</button>
+
+                            </div>
+                       </div>     
+                        
+                         
+                                
+                        
+                        
+                        
+                                                               
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <asp:Button ID="btnGuardar2" runat="server" Text="Guardar" class="btn btn-success btn-block" CausesValidation="true" ValidationGroup="gNuevoDatos" />
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-default btn-block" data-dismiss="modal" aria-hidden="true">Cancelar</button>
+                        </div>
+                    </div>
+                    <input type="hidden" name="Alta" value="1">
+                </div>
+            </div>
+       </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/signature_pad@2.3.2/dist/signature_pad.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            Update();
+        })
+        Sys.WebForms.PageRequestManager.getInstance().add_endRequest(Update);
+        function Update() {
+
+            $('.contenedor_firma_alta').addClass('hidden');
+            $('.contenedor_firma_editar').addClass('hidden');
+
+            if ($('#<%=rol1.ClientID%> option:selected').val() == 3) {
+                $('.contenedor_firma_editar').removeClass('hidden');
+            }
+
+            if ($('#<%=rol2.ClientID%> option:selected').val() == 3) {
+                $('.contenedor_firma_alta').removeClass('hidden');
+            }
+
+            //Ocultar firmas
+            $('#<%=rol1.ClientID%>').change(function () {
+                if ($(this).val() == 3) {
+                    $('.contenedor_firma_editar').removeClass('hidden');
+                }
+                else {
+                    $('.contenedor_firma_editar').addClass('hidden');
+                }
+            });
+
+            $('#<%=rol2.ClientID%>').change(function () {
+                if ($(this).val() == 3) {
+                    $('.contenedor_firma_alta').removeClass('hidden');
+                }
+                else {
+                    $('.contenedor_firma_alta').addClass('hidden');
+                }
+            });
+
+
+
+
+            var grid = document.getElementById('<%= GdUsuarios.ClientID%>');
+            var tbody = grid.getElementsByTagName("tbody")[0]; //gets the first and only tbody
+            var firstTr = tbody.getElementsByTagName("tr")[0]; //gets the first tr, hopefully contains the th's
+
+            tbody.removeChild(firstTr); //remove tr's from table
+
+            var newTh = document.createElement('thead'); //creates thead
+            newTh.appendChild(firstTr); //puts ths in thead
+            grid.insertBefore(newTh, tbody); //puts thead behore tbody
+            $(document.getElementById('<%= GdUsuarios.ClientID%>')).DataTable({
+                language: {
+                    url: "https://cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json"
+                },
+                "ordering": true,
+            });
+            $('#mensaje_canvas_alta').html('Modo dibujar activado');
+            $('#mensaje_canvas_editar').html('Modo dibujar activado');
+
+
+            var canvas_alta = document.getElementById('canvas_firma_alta');
+            var canvas_editar = document.getElementById('canvas_firma_editar');
+
+
+            var context = canvas_editar.getContext("2d");
+            if ($('#<%=firma_editar.ClientID%>').val() != '')
+            {
+                var img = new Image();
+                img.src = $('#<%=firma_editar.ClientID%>').val();
+                img.onload = function () {
+                    context.drawImage(img, 0, 0);
+                };
+            }
+            
+            // Adjust canvas coordinate space taking into account pixel ratio,
+            // to make it look crisp on mobile devices.
+            // This also causes canvas to be cleared.
+            function resizeCanvas() {
+                // When zoomed out to less than 100%, for some very strange reason,
+                // some browsers report devicePixelRatio as less than 1
+                // and only part of the canvas is cleared then.
+                var ratio = Math.max(window.devicePixelRatio || 1, 1);
+                canvas_alta.width = canvas_alta.offsetWidth * ratio;
+                canvas_alta.height = canvas_alta.offsetHeight * ratio;
+                canvas_alta.getContext("2d").scale(ratio, ratio);
+
+                canvas_editar.width = canvas_editar.offsetWidth * ratio;
+                canvas_editar.height = canvas_editar.offsetHeight * ratio;
+                canvas_editar.getContext("2d").scale(ratio, ratio);
+            }
+
+            window.onresize = resizeCanvas;
+            //resizeCanvas();
+
+            ////// Declaración del objeto
+            var signaturePad = new SignaturePad(canvas_alta, {
+                backgroundColor: 'rgb(255, 255, 255)' // necessary for saving image as JPEG; can be removed is only saving as PNG or SVG
+            });
+
+            var signaturePad_editar = new SignaturePad(canvas_editar, {
+                backgroundColor: 'rgb(255, 255, 255)' // necessary for saving image as JPEG; can be removed is only saving as PNG or SVG
+            });
+
+            ////////// Evento clic en el canvas
+            document.getElementById('canvas_firma_alta').addEventListener('click', function () {
+                if (signaturePad.isEmpty()) {
+                    return alert("Por favor dibuja la firma.");
+                }
+                var dataURL = signaturePad.toDataURL();
+                var data = signaturePad.toDataURL('image/png');
+                $('#<%=firma_alta.ClientID%>').val(data);
+                console.log(data);
+            });
+
+            document.getElementById('canvas_firma_editar').addEventListener('click', function () {
+                if (signaturePad_editar.isEmpty()) {
+                    return alert("Por favor dibuja la firma.");
+                }
+                var dataURL = signaturePad_editar.toDataURL();
+                var data = signaturePad_editar.toDataURL('image/png');
+                $('#<%=firma_editar.ClientID%>').val(data);
+                console.log(data);
+            });
+
+            ///////////Botón limpiar
+            document.getElementById('clear_alta').addEventListener('click', function () {
+                signaturePad.clear();
+                $('#<%=firma_alta.ClientID%>').val('');
+            });
+
+            document.getElementById('clear_editar').addEventListener('click', function () {
+                signaturePad_editar.clear();
+                $('#<%=firma_editar.ClientID%>').val('');
+                console.log('Click en limpiar de editar');
+            });
+
+            //////Botón dibular
+            document.getElementById('draw_alta').addEventListener('click', function () {
+                var ctx = canvas_alta.getContext('2d');
+                console.log(ctx.globalCompositeOperation);
+                ctx.globalCompositeOperation = 'source-over'; // default value
+                $('#mensaje_canvas_alta').html('Modo dibujar activado');
+            });
+            document.getElementById('draw_editar').addEventListener('click', function () {
+                var ctx = canvas_editar.getContext('2d');
+                console.log(ctx.globalCompositeOperation);
+                ctx.globalCompositeOperation = 'source-over'; // default value
+                $('#mensaje_canvas_editar').html('Modo dibujar activado');
+            });
+
+            /////////Botón borrar
+            document.getElementById('erase_alta').addEventListener('click', function () {
+                var ctx = canvas_alta.getContext('2d');
+                ctx.globalCompositeOperation = 'destination-out';
+                $('#mensaje_canvas_alta').html('Modo borar activado');
+            });
+            document.getElementById('erase_editar').addEventListener('click', function () {
+                var ctx = canvas_editar.getContext('2d');
+                ctx.globalCompositeOperation = 'destination-out';
+                $('#mensaje_canvas_editar').html('Modo borar activado');
+            });
+
+            function dataURLToBlob(dataURL) {
+                // Code taken from https://github.com/ebidel/filer.js
+                var parts = dataURL.split(';base64,');
+                var contentType = parts[0].split(":")[1];
+                var raw = window.atob(parts[1]);
+                var rawLength = raw.length;
+                var uInt8Array = new Uint8Array(rawLength);
+
+                for (var i = 0; i < rawLength; ++i) {
+                    uInt8Array[i] = raw.charCodeAt(i);
+                }
+                return new Blob([uInt8Array], { type: contentType });
+            }
+
+
+        }
+</script>
+
+
+
+
+</asp:Content>

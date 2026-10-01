@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="AI " Folio="3" Fecha="2020-07-13T12:36:00" Sello="ggaqjz/YzDUBLawBnVQ7FiKpr6tjHdYjAOpMX4Sad2zUPZOJhvjpDmg8Ilw4TugG0Rqa+ftpZdbTcr8Caj7zb5wh8NK24jh/2fiiUO0RG6hYWnFtkj9bUDc3DzBPvxhUpDv7H1Nc678fxCsfb0zQLLk7NONLBE2845j+cNsCsdUcNLbkhWOkQfT/ROhyjdDBegW/9FVfCiIg2AEWX7ww3AOed7QdKCajMwvHyfBWDEnXEn6GIZPK70j9UVT1skblTK7o9NA+qwszUB0hrHk3pT1ayF6wi2Vqoipy5PLPzPrG1WpxmQk7GFgDbolDl0eScP0Y5n91Pd5CKDmq6WW18g==" FormaPago="01" NoCertificado="00001000000406906304" Certificado="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" SubTotal="862.06" Moneda="MXN" Total="999.99" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="97120" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor Rfc="FMD020730PQ5" Nombre="FISIOTERAPIA Y MEDICINA DEPORTIVA SCP" RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="PUBLICO EN GENERAL" UsoCFDI="P01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="42272212" NoIdentificacion="noIdentificacion" Cantidad="2" ClaveUnidad="H87" Unidad="Pieza" Descripcion="Ejercitador Pulmonar Threshold IMT--" ValorUnitario="431.03" Importe="862.06">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="862.06" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="137.9296" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="137.93">
+    <cfdi:Traslados>
+      <cfdi:Traslado Importe="137.93" TipoFactor="Tasa" TasaOCuota="0.160000" Impuesto="002" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+</cfdi:Comprobante>

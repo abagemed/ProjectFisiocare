@@ -1,0 +1,62 @@
+
+
+.TablaRegistro {
+     width: 95%; 
+     margin:0% 2%; 
+     text-align: left; 
+     vertical-align:middle; 
+}
+.TablaRegistro tr td {
+    max-width:33%;
+    width:33%;
+    padding-left:2%;
+    padding-right:1%;
+    height:.5em;
+
+}
+.TablaHistorial {
+     width: 95%; 
+     min-width:95%;
+     margin:0% 2%; 
+     text-align: left; 
+     vertical-align:middle; 
+}
+.imageextremidad {
+     width:90%;    
+     padding:.2em; 
+     border:.2em solid; 
+     border-radius:.2em;
+  
+}
+.tdizquierdo {
+    width:50%;
+    max-width:50%; 
+    padding-left:1em; 
+    padding-right:1em;
+    
+}
+.tdderecho {
+    width:50%;
+    max-width:50%; 
+    padding-left:1em; 
+    padding-right:1em;
+    
+}
+.TablaBuscar {
+     width: 95%; 
+     margin:0% 2%; 
+     text-align: left; 
+     vertical-align:middle; 
+}
+.TablaBuscar tr td {
+    text-align:right;
+    padding-left:2%;
+    padding-right:1%;
+    height:.5em;
+}
+.salesrow {
+    max-height:2em;
+
+
+}
+

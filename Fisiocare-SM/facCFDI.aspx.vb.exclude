@@ -1,0 +1,187 @@
+﻿Imports System.Xml
+Imports System.Text
+Imports System.Collections.Generic
+Imports System.Security.Cryptography
+Imports System.Security.Cryptography.X509Certificates
+Imports System.IO
+Imports mx.fel.www
+Imports CFDI
+Imports ThoughtWorks.QRCode.Codec
+Imports System.Drawing
+Imports System.Drawing.ImageFormatConverter
+Imports System.Data.Sql
+Imports System.Data.SqlClient
+
+Partial Class facCFDI
+    Inherits System.Web.UI.Page
+    Dim classCFDI As New CFDIclass
+    Dim funciones As New miclases
+
+    Protected Sub Button2_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button2.Click
+
+        Dim comp As New Comprobante()
+        comp.folio = "76"
+        Dim fecha As DateTime = DateTime.Now
+        comp.fecha = String.Format("{0}T{1}", fecha.ToString("yyyy-MM-dd"), fecha.ToString("HH:mm:ss"))
+        comp.formaDePago = "PAGO EN UNA SOLA EXHIBICION"
+        comp.subTotal = "86.6400"
+        comp.total = "100.0300"
+        comp.tipoDeComprobante = "ingreso"
+        comp.moneda = "MXP"
+        comp.tipoCambio = "1.0"
+        comp.metodoDePago = "EFECTIVO"
+        comp.lugarExpedicion = "MÉRIDA,YUCATÁN"
+
+        Dim emisor As New Emisor()
+        emisor.rfc = "FMD020730PQ5"
+        emisor.nombre = "FISIOTERAPIA Y MEDICINA DEPORTIVA SCP"
+        emisor.domicilioFiscal = New DomicilioFiscal
+        emisor.domicilioFiscal.calle = "19"
+        emisor.domicilioFiscal.noExterior = "88"
+        emisor.domicilioFiscal.colonia = "CAMPESTRE"
+        emisor.domicilioFiscal.localidad = "MÉRIDA"
+        emisor.domicilioFiscal.municipio = "MÉRIDA"
+        emisor.domicilioFiscal.estado = "YUCATÁN"
+        emisor.domicilioFiscal.pais = "MEXICO"
+        emisor.domicilioFiscal.codigoPostal = "97120"
+        emisor.regimenFiscal = New RegimenFiscal
+        emisor.regimenFiscal.regimen = "PERSONA FISICA CON ACTIVIDAD EMPRESARIAL"
+
+        Dim receptor As New Receptor()
+        receptor.rfc = "XAXX010101000"
+        receptor.nombre = "DEMO RFC"
+        receptor.domicilio = New Domicilio()
+        receptor.domicilio.calle = "MADERO"
+        receptor.domicilio.noExterior = "# 613"
+        receptor.domicilio.colonia = "CENTRO"
+        receptor.domicilio.municipio = "SAN FELIPE"
+        receptor.domicilio.estado = "GUANAJUATO"
+        receptor.domicilio.pais = "MEXICO"
+
+        Dim concepto As New Concepto()
+        concepto.cantidad = "9.74"
+        concepto.unidad = "litros"
+        concepto.noIdentificacion = "34006"
+        concepto.descripcion = "DIESEL"
+        concepto.importe = "86.2326"
+        concepto.valorUnitario = "8.8500"
+
+        Dim iva As New Traslado()
+        iva.impuesto = "IVA"
+        iva.importe = "13.3900"
+        iva.tasa = "16"
+
+        Dim impuestos As New Impuestos()
+        impuestos.traslados = New List(Of Traslado)()
+        impuestos.totalImpuestosTrasladados = "13.3900"
+        impuestos.totalImpuestosRetenidos = "0.0000"
+        impuestos.traslados.Add(iva)
+
+        comp.emisor = emisor
+        comp.receptor = receptor
+        comp.conceptos = New List(Of Concepto)()
+        comp.conceptos.Add(concepto)
+        comp.impuestos = impuestos
+
+        Dim cer As New X509Certificate2(Server.MapPath("fmd020730pq5_1307161754s.pfx"), "fmdscp2013", X509KeyStorageFlags.MachineKeySet)
+        Dim Xml = CFDIv32.Serializar(comp, False)
+        Dim cadenaOriginal = CFDIv32.CadenaOriginalSellado(Xml)
+
+        Dim ar = cer.GetSerialNumber
+        Array.Reverse(ar)
+        comp.noCertificado = Encoding.UTF8.GetString(ar)
+        comp.certificado = Convert.ToBase64String(cer.RawData)
+        comp.sello = CFDIv32.Sello(cadenaOriginal, cer)
+
+        Xml = CFDIv32.Serializar(comp, True)
+        CFDIv32.Validar(Xml, False)
+        File.WriteAllText(Server.MapPath("mandatorio.xml"), Xml)
+
+        Dim timbrarFac As New WS_TFD
+        Dim respuesta = timbrarFac.TimbrarCFDPrueba("DEMO020730PQ5", "ZvJbP3@iuf$$", Xml)
+
+        Dim doc As XmlDocument = New XmlDocument()
+        doc.LoadXml(respuesta(3))
+        Dim nameFile As String = "C:\reporteFisio\archivosFac\cp\cp-fac" + comp.folio.ToString + ".xml"
+        doc.Save(nameFile)
+
+        Dim xmlDoc As New XmlDocument
+        Dim NodeList As XmlNodeList
+        Dim Node As XmlNode
+        Dim bandera As Boolean = True
+        Dim i As Integer = 0
+
+        xmlDoc.Load(nameFile)
+        NodeList = xmlDoc.ChildNodes
+        Do While bandera
+            If NodeList.Item(i).LocalName = "Comprobante" Then
+                NodeList = NodeList.Item(i).ChildNodes
+                bandera = False
+            End If
+            i = i + 1
+        Loop
+        i = 0
+        bandera = True
+
+        Do While bandera
+
+            If NodeList.Item(i).LocalName = "Complemento" Then
+                NodeList = NodeList.Item(i).ChildNodes
+                bandera = False
+            End If
+            i = i + 1
+        Loop
+        i = 0
+
+        Node = NodeList.Item(0)
+        Do While i < Node.Attributes.Count
+            Select Case Node.Attributes.Item(i).LocalName
+                Case "UUID"
+                    Label1.Text = "UUID - " + Node.Attributes.Item(i).Value.ToString
+                Case "selloCFD"
+                    Label2.Text = "selloCFD- " + Node.Attributes.Item(i).Value.ToString
+                Case "noCertificadoSAT"
+                    Label3.Text = "noCertificadoSAT - " + Node.Attributes.Item(i).Value.ToString
+                Case "selloSAT"
+                    Label4.Text = "selloSAT - " + Node.Attributes.Item(i).Value.ToString
+            End Select
+            i = i + 1
+        Loop
+    End Sub
+
+    Protected Sub Button1_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim QRCodeEncoder As New QRCodeEncoder
+
+        'Dim enconding As String = "Byte"
+        'QRCodeEncoder.QRCodeScale = "3"
+        'QRCodeEncoder.QRCodeVersion = "7"
+        'QRCodeEncoder.QRCodeErrorCorrect = QRCodeEncoder.ERROR_CORRECTION.M
+
+        Dim imagen As Bitmap
+        Dim datos As String = "RAUL"
+        imagen = QRCodeEncoder.Encode(datos)
+
+        imagen.Save(Server.MapPath("qrFac.jpg"), Imaging.ImageFormat.Jpeg)
+        Dim aux As String = Server.MapPath("qrFac.jpg")
+        Image1.ImageUrl = aux
+
+    End Sub
+
+    Protected Sub Button3_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Dim fs As FileStream = New FileStream("C:\reporteFisio\archivosFac\cp\qrFac.jpeg", FileMode.Open)
+        Dim br As BinaryReader = New BinaryReader(fs)
+        Dim imagen(CInt(fs.Length)) As Byte
+
+        br.Read(imagen, 0, CInt(fs.Length))
+        br.Close()
+        fs.Close()
+
+        Dim conexion As SqlConnection = funciones.conecta()
+        Dim comando As SqlCommand = conexion.CreateCommand
+        comando.CommandText = "insert into imgqr(qr) values(@qr)"
+        comando.Parameters.Add(New SqlParameter("@qr", System.Data.SqlDbType.Image)).Value = imagen
+        conexion.Open()
+        comando.ExecuteNonQuery()
+        conexion.Close()
+    End Sub
+End Class

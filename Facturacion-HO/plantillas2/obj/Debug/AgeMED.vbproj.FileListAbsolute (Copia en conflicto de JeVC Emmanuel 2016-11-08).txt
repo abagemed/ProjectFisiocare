@@ -1,0 +1,33 @@
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AjaxControlToolkit.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.dll
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.xml
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\RdlCompile.cache
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\bin\AgeMED.dll.config
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\bin\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\bin\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\bin\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\AgeMed Compartido\Plantilla\plantillas2\obj\Debug\AgeMED.pdb

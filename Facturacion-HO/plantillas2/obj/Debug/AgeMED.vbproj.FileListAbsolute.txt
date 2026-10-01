@@ -1,0 +1,372 @@
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\bin\AjaxControlToolkit.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\plantillas2\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.dll
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\Dropbox\plantillas2\plantillas2\bin\AgeMED.xml
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\RdlCompile.cache
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Users\valde\Dropbox\plantillas2\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\bin\AgeMED.dll.config
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\bin\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\bin\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\bin\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version 16 11 2016\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.dll.config
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\bin\AjaxControlToolkit.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\RdlCompile.cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\16 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\bin\AgeMED.dll.config
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\bin\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\bin\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\bin\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\Gerardo Ultima Version\18 11 2016\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.dll.config
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\bin\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GerardoAntonio\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\bin\AgeMED.dll.config
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\bin\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\bin\AgeMED.pdb
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\bin\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\JesúsEmmanuel\Dropbox\Med Solution\AgeMedFinal\18 11 2016 GAE\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2016\AgeMedFinal\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2016\AgeMedFinal\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2016\AgeMedFinal\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2016\AgeMedFinal\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2016\AgeMedFinal\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMedFinal\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\AgeMedFinal\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\AgeMedFinal\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\AgeMedFinal\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\AgeMedFinal\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\bin\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\bin\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\bin\AjaxControlToolkit.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\RdlCompile.cache
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\OneDrive\Documentos\Visual Studio 2013\Projects\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\AgeMedFinalCristian\plantillas2\obj\Debug\AgeMED.pdb
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\bin\AgeMED.dll.config
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\bin\AgeMED.dll
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\bin\AgeMED.pdb
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\bin\AgeMED.xml
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.Resources.resources
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\RdlCompile.cache
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\RdlCompile.compiled
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.dll
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.xml
+\\MI-IP\DesarrolloAgeMed\Cristian\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-Christhian11\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\AgeMed-Christhian15\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-Christhian\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\AgeMed-HO\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\AgeMed-HO\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\AgeMed-HO\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-HO\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\AgeMed-HO\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.dll.config
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.dll
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.pdb
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\bin\AgeMED.xml
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\Interop.Scripting.dll
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.Resources.resources
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\RdlCompile.cache
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\RdlCompile.compiled
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.dll
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.xml
+E:\Desarrollo2017\AgeMed-ORTOPEDIA\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\bin\AgeMED.dll
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\bin\AgeMED.xml
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\RdlCompile.cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\bin\AgeMED.dll
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\bin\AgeMED.xml
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\RdlCompile.cache
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\Desktop\AgeMed-ORTOPEDIA-Antonio_new\plantillas2\obj\Debug\AgeMED.pdb
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\bin\AgeMED.dll.config
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\bin\AgeMED.dll
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\bin\AgeMED.pdb
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\bin\AgeMED.xml
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\RdlCompile.cache
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\AgeMED.dll
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\AgeMED.xml
+C:\Users\valde\Desktop\Fisio Fac\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\Fisio Fac\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\Fisio Fac\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\Fisio Fac\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\Fisio Fac\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\Fisio Fac\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\bin\AgeMED.dll
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\bin\AgeMED.xml
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo2017\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo\FISIO FAC HO\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo\FISIO FAC HO\plantillas2\bin\AgeMED.dll
+C:\Desarrollo\FISIO FAC HO\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo\FISIO FAC HO\plantillas2\bin\AgeMED.xml
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo\FISIO FAC HO\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo\FISIO FAC HONew\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo\FISIO FAC HONew\plantillas2\bin\AgeMED.dll
+C:\Desarrollo\FISIO FAC HONew\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo\FISIO FAC HONew\plantillas2\bin\AgeMED.xml
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo\FISIO FAC HONew\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+C:\MedSolProjects\Facturacion-HO\plantillas2\bin\AgeMED.dll.config
+C:\MedSolProjects\Facturacion-HO\plantillas2\bin\AgeMED.dll
+C:\MedSolProjects\Facturacion-HO\plantillas2\bin\AgeMED.pdb
+C:\MedSolProjects\Facturacion-HO\plantillas2\bin\AgeMED.xml
+C:\MedSolProjects\Facturacion-HO\plantillas2\bin\stdole.dll
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbprojAssemblyReference.cache
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.cache
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.CoreCompileInputs.cache
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.CopyComplete
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.dll
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.xml
+C:\MedSolProjects\Facturacion-HO\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.dll.config
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.dll
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.pdb
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.xml
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\Interop.Scripting.dll
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.Resources.resources
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\RdlCompile.cache
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\RdlCompile.compiled
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.dll
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.xml
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.pdb
+C:\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbprojResolveAssemblyReference.cache
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\Interop.Scripting.dll
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.ResolveComReference.cache
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.Resources.resources
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.vbproj.GenerateResource.Cache
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\RdlCompile.cache
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\RdlCompile.compiled
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.dll.config
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.dll
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.pdb
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\bin\AgeMED.xml
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.dll
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.xml
+D:\Agemed\Desarrollo\GITHUB\Facturacion-HO\plantillas2\obj\Debug\AgeMED.pdb

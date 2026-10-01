@@ -1,0 +1,5059 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+AgeMED
+</name>
+</assembly>
+<members>
+<member name="M:AgeMED.FacturacionClientes1.BtnCargosManuales_Click">
+ PARA AGREGAR UN CM AB02072020
+
+</member><member name="M:AgeMED.FacturacionClientes1.cargaDtgCargosManuales">
+CARGAR CM AB02072020
+
+</member><member name="T:AgeMED.NEntidadSNCF">
+	<summary>
+ Nodo opcional para que las entidades adheridas al Sistema Nacional de Coordinación Fiscal realcen la identificacion del origen de los recursos.
+ Secuencia(min, max)
+ Secuencia (0,1)
+ </summary>
+</member><member name="F:AgeMED.NSubContratacion.RfcLabora">
+	<summary>
+ Rfc de la person que lo subcontrata
+ </summary>
+</member><member name="F:AgeMED.NPercepciones.Percepciones">
+	<summary>
+ Nodo condicional para expresar la informacion detallada de pagos por jubilacion, pensiones o haberes de retiro
+ Percepcion(minimon, maximo)
+ Percepcion(1, Ilimitado)
+ </summary>
+</member><member name="F:AgeMED.NPercepciones.JubilacionPensionRetiro">
+	<summary>
+ JubilacionPensionRetiro(minimo, maximo)
+ JubilacionPensionRetiro(0,1)
+ </summary>
+</member><member name="F:AgeMED.NPercepciones.SeparacionIndeminzacion">
+	<summary>
+ SeparacionIndeminzacion(minimo, maximo)
+  SeparacionIndeminzacion(0, 1)
+ </summary>
+</member><member name="F:AgeMED.NOtroPago.SubsidioAlEmpleo">
+	<summary>
+ SubsidioAlEmpleo (0, 1)
+ </summary>
+</member><member name="F:AgeMED.NOtroPago.CompensacionSaldosAFavor">
+	<summary>
+ CompensacionSaldosAFavor (0, 1)
+ </summary>
+</member><member name="F:AgeMED.conciliacion.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxbPaterno">
+	<summary>
+Control TxbPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxbPaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbPaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxbMaterno">
+	<summary>
+Control TxbMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxbMaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbMaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxbNombre">
+	<summary>
+Control TxbNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxbNombre_TextBoxWatermarkExtender">
+	<summary>
+Control TxbNombre_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.BotonBuscar">
+	<summary>
+Control BotonBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.LstBoxPacientes">
+	<summary>
+Control LstBoxPacientes.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.Fecha">
+	<summary>
+Control Fecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxtImporte">
+	<summary>
+Control TxtImporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxtReferencia">
+	<summary>
+Control TxtReferencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.RequiredFieldValidator2">
+	<summary>
+Control RequiredFieldValidator2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.RequiredFieldValidator4">
+	<summary>
+Control RequiredFieldValidator4.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.BtnBuscar">
+	<summary>
+Control BtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.BtnVer">
+	<summary>
+Control BtnVer.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.observaciones">
+	<summary>
+Control observaciones.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.TxtSerie">
+	<summary>
+Control TxtSerie.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.DdTipoPago">
+	<summary>
+Control DdTipoPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.saldo">
+	<summary>
+Control saldo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.UpdatePanelGDFacturas">
+	<summary>
+Control UpdatePanelGDFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.GdFacturas">
+	<summary>
+Control GdFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.Hdgfacturas">
+	<summary>
+Control Hdgfacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.HdIndex">
+	<summary>
+Control HdIndex.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.HdfolioIngreso">
+	<summary>
+Control HdfolioIngreso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.HdAporteParcialFac">
+	<summary>
+Control HdAporteParcialFac.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.HdPregunta">
+	<summary>
+Control HdPregunta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.HdReferencia">
+	<summary>
+Control HdReferencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.Hdidcliente">
+	<summary>
+Control Hdidcliente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.btn_conciliar">
+	<summary>
+Control btn_conciliar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.UpdatePanel2">
+	<summary>
+Control UpdatePanel2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.LblSinFacturas">
+	<summary>
+Control LblSinFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.GdFacConciliadas">
+	<summary>
+Control GdFacConciliadas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.BtnDesasignarFAC">
+	<summary>
+Control BtnDesasignarFAC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.UpdatePanel3">
+	<summary>
+Control UpdatePanel3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.Label1">
+	<summary>
+Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacion.GdBuscarReferencias">
+	<summary>
+Control GdBuscarReferencias.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="T:AgeMED.ExpedientesMS.AgAgendaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:AgeMED.ExpedientesMS.AgAgendaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:AgeMED.ExpedientesMS.AgAgendaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:AgeMED.ExpedientesMS">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:AgeMED.ExpedientesMSTableAdapters.AgAgendaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager.UpdateUpdatedRows(AgeMED.ExpedientesMS,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager.UpdateInsertedRows(AgeMED.ExpedientesMS,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager.UpdateDeletedRows(AgeMED.ExpedientesMS,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager.UpdateAll(AgeMED.ExpedientesMS)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:AgeMED.ExpedientesMSTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="F:AgeMED.facturas_datos.razon_social_alta">
+	<summary>
+Control razon_social_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.rfc_alta">
+	<summary>
+Control rfc_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.correo_alta">
+	<summary>
+Control correo_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.direccion_alta">
+	<summary>
+Control direccion_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.cp_alta">
+	<summary>
+Control cp_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.ciudad_alta">
+	<summary>
+Control ciudad_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.municipio_alta">
+	<summary>
+Control municipio_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.estado_alta">
+	<summary>
+Control estado_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.pais_alta">
+	<summary>
+Control pais_alta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.select_razon_social">
+	<summary>
+Control select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.box_razon">
+	<summary>
+Control box_razon.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.input_razon_social">
+	<summary>
+Control input_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.nombre">
+	<summary>
+Control nombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.rfc">
+	<summary>
+Control rfc.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.correo">
+	<summary>
+Control correo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.direccion">
+	<summary>
+Control direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.cp">
+	<summary>
+Control cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.ciudad">
+	<summary>
+Control ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.municipio">
+	<summary>
+Control municipio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.estado">
+	<summary>
+Control estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturas_datos.pais">
+	<summary>
+Control pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:AgeMED.My.Resources.Resources.ResourceManager">
+	<summary>
+  Devuelve la instancia de ResourceManager almacenada en caché utilizada por esta clase.
+</summary>
+</member><member name="P:AgeMED.My.Resources.Resources.Culture">
+	<summary>
+  Reemplaza la propiedad CurrentUICulture del subproceso actual para todas las
+  búsquedas de recursos mediante esta clase de recurso fuertemente tipado.
+</summary>
+</member><member name="T:AgeMED.My.Resources.Resources">
+	<summary>
+  Clase de recurso fuertemente tipado, para buscar cadenas traducidas, etc.
+</summary>
+</member><member name="F:AgeMED.ABCCargos.UpdatePanel2">
+	<summary>
+Control UpdatePanel2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.GdUsuarios">
+	<summary>
+Control GdUsuarios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.Hdpregunta">
+	<summary>
+Control Hdpregunta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.HdUsuarioEdit">
+	<summary>
+Control HdUsuarioEdit.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtdescripcion">
+	<summary>
+Control txtdescripcion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator1">
+	<summary>
+Control RequiredFieldValidator1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtcosto">
+	<summary>
+Control txtcosto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator2">
+	<summary>
+Control RequiredFieldValidator2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.sactivo">
+	<summary>
+Control sactivo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.sactivomed">
+	<summary>
+Control sactivomed.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtClavesat">
+	<summary>
+Control txtClavesat.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator3">
+	<summary>
+Control RequiredFieldValidator3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtClaveunidad">
+	<summary>
+Control txtClaveunidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator4">
+	<summary>
+Control RequiredFieldValidator4.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtunidad">
+	<summary>
+Control txtunidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator5">
+	<summary>
+Control RequiredFieldValidator5.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtTIVA">
+	<summary>
+Control txtTIVA.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator6">
+	<summary>
+Control RequiredFieldValidator6.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtTISR">
+	<summary>
+Control txtTISR.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator12">
+	<summary>
+Control RequiredFieldValidator12.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtdescripciona">
+	<summary>
+Control txtdescripciona.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator7">
+	<summary>
+Control RequiredFieldValidator7.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtcostoa">
+	<summary>
+Control txtcostoa.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator8">
+	<summary>
+Control RequiredFieldValidator8.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.sactivomeda">
+	<summary>
+Control sactivomeda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtClavesata">
+	<summary>
+Control txtClavesata.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator9">
+	<summary>
+Control RequiredFieldValidator9.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtClaveunidada">
+	<summary>
+Control txtClaveunidada.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator10">
+	<summary>
+Control RequiredFieldValidator10.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.txtunidada">
+	<summary>
+Control txtunidada.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.RequiredFieldValidator11">
+	<summary>
+Control RequiredFieldValidator11.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.stasaivaa">
+	<summary>
+Control stasaivaa.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.stasaisra">
+	<summary>
+Control stasaisra.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.sservicioa">
+	<summary>
+Control sservicioa.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.ABCCargos.btnGuardar2">
+	<summary>
+Control btnGuardar2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.lista_conceptos">
+	<summary>
+Control lista_conceptos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.cantidad">
+	<summary>
+Control cantidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LstConceptoPagos">
+	<summary>
+Control LstConceptoPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.UpdatePanel3">
+	<summary>
+Control UpdatePanel3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.PanelAvisosPagos">
+	<summary>
+Control PanelAvisosPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblMensajeAvisoPagos">
+	<summary>
+Control LblMensajeAvisoPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.PanelDesicionPagos">
+	<summary>
+Control PanelDesicionPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblDecisionPagos">
+	<summary>
+Control LblDecisionPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.PanelCriticoPagos">
+	<summary>
+Control PanelCriticoPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblMensajeCriticoPagos">
+	<summary>
+Control LblMensajeCriticoPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.PanelAdvertenciaPagos">
+	<summary>
+Control PanelAdvertenciaPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblMensajeAdvertenciaPagos">
+	<summary>
+Control LblMensajeAdvertenciaPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblNombrePaciente">
+	<summary>
+Control LblNombrePaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.GdvConceptoPagos">
+	<summary>
+Control GdvConceptoPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.mensaje_pago">
+	<summary>
+Control mensaje_pago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblPagoTotal">
+	<summary>
+Control LblPagoTotal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.TxtAbono">
+	<summary>
+Control TxtAbono.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblPagoSaldo">
+	<summary>
+Control LblPagoSaldo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.HdPreguntasPagos">
+	<summary>
+Control HdPreguntasPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.HdIndexPagos">
+	<summary>
+Control HdIndexPagos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.Hffolioconsulta">
+	<summary>
+Control Hffolioconsulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.HdEliminaConcepto">
+	<summary>
+Control HdEliminaConcepto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.HdConceptoPagoCERO">
+	<summary>
+Control HdConceptoPagoCERO.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.imprimir_ticket_btn">
+	<summary>
+Control imprimir_ticket_btn.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.registrar_pago">
+	<summary>
+Control registrar_pago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.GdAbonosRealizados">
+	<summary>
+Control GdAbonosRealizados.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.GdvConceptoPagos2">
+	<summary>
+Control GdvConceptoPagos2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblPagoTotal2">
+	<summary>
+Control LblPagoTotal2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.forma_pago">
+	<summary>
+Control forma_pago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.referencia">
+	<summary>
+Control referencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.folio_consulta">
+	<summary>
+Control folio_consulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.fecha_ticket">
+	<summary>
+Control fecha_ticket.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.paciente_nombre">
+	<summary>
+Control paciente_nombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.paciente_telefono">
+	<summary>
+Control paciente_telefono.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.paciente_direccion">
+	<summary>
+Control paciente_direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.GdvConceptoPagos3">
+	<summary>
+Control GdvConceptoPagos3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Pagos.LblPagoTotal3">
+	<summary>
+Control LblPagoTotal3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="M:AgeMED.MetodoVoz.Dispose">
+	<summary>
+  Deberá configurar este módulo en el archivo web.config de su
+  web y registrarlo en IIS para poder usarlo. Para obtener más información
+  vea el siguiente vínculo: http://go.microsoft.com/?linkid=8101007
+ </summary>
+</member><member name="F:AgeMED.PagosClientes.box_BusquedaPaciente">
+	<summary>
+Control box_BusquedaPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.UpdatePanelCita">
+	<summary>
+Control UpdatePanelCita.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.TxbPaterno">
+	<summary>
+Control TxbPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.TxbPaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbPaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.TxbMaterno">
+	<summary>
+Control TxbMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.TxbMaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbMaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.TxbNombre">
+	<summary>
+Control TxbNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.TxbNombre_TextBoxWatermarkExtender">
+	<summary>
+Control TxbNombre_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.BotonBuscar">
+	<summary>
+Control BotonBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LstBoxPacientes">
+	<summary>
+Control LstBoxPacientes.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.UpdatePanel3">
+	<summary>
+Control UpdatePanel3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.panelError">
+	<summary>
+Control panelError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblNomPaciente">
+	<summary>
+Control LblNomPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelAviso2">
+	<summary>
+Control PanelAviso2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblAviso">
+	<summary>
+Control LblAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelDesicion2">
+	<summary>
+Control PanelDesicion2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblDesicion">
+	<summary>
+Control LblDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.BtnSi2">
+	<summary>
+Control BtnSi2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.BtnNo2">
+	<summary>
+Control BtnNo2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelCritico2">
+	<summary>
+Control PanelCritico2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.Lblcritico">
+	<summary>
+Control Lblcritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.PanelAdvertencia2">
+	<summary>
+Control PanelAdvertencia2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.LblAdvertencia">
+	<summary>
+Control LblAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.dtgCargosConsultas">
+	<summary>
+Control dtgCargosConsultas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.btn_facturar">
+	<summary>
+Control btn_facturar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.origen_reporte">
+	<summary>
+Control origen_reporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.visor_reporte">
+	<summary>
+Control visor_reporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_dfacturacion">
+	<summary>
+Control div_dfacturacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbVersion">
+	<summary>
+Control tbVersion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbTipoComprobante">
+	<summary>
+Control tbTipoComprobante.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbSerie">
+	<summary>
+Control tbSerie.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbFolio">
+	<summary>
+Control tbFolio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.dtpFecha">
+	<summary>
+Control dtpFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_buscaremisor">
+	<summary>
+Control div_buscaremisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbPagoCuentaBeneficiario">
+	<summary>
+Control tbPagoCuentaBeneficiario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbPagoRfcEmisoCtaDestino">
+	<summary>
+Control tbPagoRfcEmisoCtaDestino.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_busqueda_emisor">
+	<summary>
+Control div_busqueda_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.selectEmisorNombre">
+	<summary>
+Control selectEmisorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_emisor">
+	<summary>
+Control div_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_input_emisor">
+	<summary>
+Control div_input_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbEmisorNombre">
+	<summary>
+Control tbEmisorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbEmisorRFC">
+	<summary>
+Control tbEmisorRFC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbEmisorRegimenFiscal">
+	<summary>
+Control tbEmisorRegimenFiscal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbLugarExpedicion">
+	<summary>
+Control tbLugarExpedicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbMoneda">
+	<summary>
+Control tbMoneda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_select_razon_social">
+	<summary>
+Control div_select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.select_razon_social">
+	<summary>
+Control select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_input_razon_social">
+	<summary>
+Control div_input_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbReceptorNombre">
+	<summary>
+Control tbReceptorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbReceptorRFC">
+	<summary>
+Control tbReceptorRFC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.correo">
+	<summary>
+Control correo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_direccion">
+	<summary>
+Control div_direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.direccion">
+	<summary>
+Control direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_cp">
+	<summary>
+Control div_cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.cp">
+	<summary>
+Control cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_ciudad">
+	<summary>
+Control div_ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.ciudad">
+	<summary>
+Control ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_estado">
+	<summary>
+Control div_estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.estado">
+	<summary>
+Control estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_pais">
+	<summary>
+Control div_pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.pais">
+	<summary>
+Control pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_Ncuenta">
+	<summary>
+Control div_Ncuenta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbPagoCtaOte">
+	<summary>
+Control tbPagoCtaOte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div2">
+	<summary>
+Control div2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbPagoRfcEmisorCtaOte">
+	<summary>
+Control tbPagoRfcEmisorCtaOte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_NBanco">
+	<summary>
+Control div_NBanco.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbPagoNombreBancoOrdenante">
+	<summary>
+Control tbPagoNombreBancoOrdenante.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.dtpPagoFecha">
+	<summary>
+Control dtpPagoFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbFormaPago">
+	<summary>
+Control tbFormaPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.nudPagoMonto">
+	<summary>
+Control nudPagoMonto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbPagoNoOperacion">
+	<summary>
+Control tbPagoNoOperacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.gridDetalles">
+	<summary>
+Control gridDetalles.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.dcpaciente">
+	<summary>
+Control dcpaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.dcobservaciones">
+	<summary>
+Control dcobservaciones.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.div_UPfiscal">
+	<summary>
+Control div_UPfiscal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbUsuarioFoliosDigitales">
+	<summary>
+Control tbUsuarioFoliosDigitales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.tbPasswordFoliosDigitales">
+	<summary>
+Control tbPasswordFoliosDigitales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.codigo_paciente">
+	<summary>
+Control codigo_paciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.codigo_emisor">
+	<summary>
+Control codigo_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.id_razon_social">
+	<summary>
+Control id_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.id_emisor">
+	<summary>
+Control id_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.folio_consulta">
+	<summary>
+Control folio_consulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.bandera">
+	<summary>
+Control bandera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.C_facturar">
+	<summary>
+Control C_facturar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PagosClientes.fconsulta">
+	<summary>
+Control fconsulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:AgeMED.My.MyWebExtension.Computer">
+	<summary>
+ Devuelve información sobre el equipo host.
+ </summary>
+</member><member name="P:AgeMED.My.MyWebExtension.User">
+	<summary>
+ Devuelve información del usuario web actual.
+ </summary>
+</member><member name="P:AgeMED.My.MyWebExtension.Request">
+	<summary>
+ Devuelve un objeto Request.
+ </summary>
+</member><member name="P:AgeMED.My.MyWebExtension.Response">
+	<summary>
+ Devuelve un objeto Response.
+ </summary>
+</member><member name="P:AgeMED.My.MyWebExtension.Log">
+	<summary>
+ Devuelve el objeto de registro Asp.
+ </summary>
+</member><member name="T:AgeMED.My.MyWebExtension">
+	<summary>
+ Módulo usado para definir las propiedades que están disponibles en el espacio de nombres My para proyectos web.
+ </summary>
+	<remarks></remarks>
+</member><member name="F:AgeMED.FacturacionNC.box_BusquedaPaciente">
+	<summary>
+Control box_BusquedaPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.UpdatePanelCita">
+	<summary>
+Control UpdatePanelCita.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.TxbPaterno">
+	<summary>
+Control TxbPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.TxbPaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbPaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.TxbMaterno">
+	<summary>
+Control TxbMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.TxbMaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbMaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.TxbNombre">
+	<summary>
+Control TxbNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.TxbNombre_TextBoxWatermarkExtender">
+	<summary>
+Control TxbNombre_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.BotonBuscar">
+	<summary>
+Control BotonBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LstBoxPacientes">
+	<summary>
+Control LstBoxPacientes.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.UpdatePanel3">
+	<summary>
+Control UpdatePanel3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.panelError">
+	<summary>
+Control panelError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblNomPaciente">
+	<summary>
+Control LblNomPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelAviso2">
+	<summary>
+Control PanelAviso2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblAviso">
+	<summary>
+Control LblAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelDesicion2">
+	<summary>
+Control PanelDesicion2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblDesicion">
+	<summary>
+Control LblDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.BtnSi2">
+	<summary>
+Control BtnSi2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.BtnNo2">
+	<summary>
+Control BtnNo2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelCritico2">
+	<summary>
+Control PanelCritico2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.Lblcritico">
+	<summary>
+Control Lblcritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelAdvertencia2">
+	<summary>
+Control PanelAdvertencia2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblAdvertencia">
+	<summary>
+Control LblAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.dtgCargosConsultas">
+	<summary>
+Control dtgCargosConsultas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.btn_facturar">
+	<summary>
+Control btn_facturar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.origen_reporte">
+	<summary>
+Control origen_reporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.visor_reporte">
+	<summary>
+Control visor_reporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelCriticoM">
+	<summary>
+Control PanelCriticoM.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblMensajeCriticoM">
+	<summary>
+Control LblMensajeCriticoM.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.PanelAdvertenciaM">
+	<summary>
+Control PanelAdvertenciaM.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.LblMensajeAdvertenciaM">
+	<summary>
+Control LblMensajeAdvertenciaM.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_dfacturacion">
+	<summary>
+Control div_dfacturacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbVersion">
+	<summary>
+Control tbVersion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbTipoComprobante">
+	<summary>
+Control tbTipoComprobante.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbSerie">
+	<summary>
+Control tbSerie.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbFolio">
+	<summary>
+Control tbFolio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.dtpFecha">
+	<summary>
+Control dtpFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_emisor">
+	<summary>
+Control div_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbEmisorNombre">
+	<summary>
+Control tbEmisorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbEmisorRFC">
+	<summary>
+Control tbEmisorRFC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbEmisorRegimenFiscal">
+	<summary>
+Control tbEmisorRegimenFiscal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbLugarExpedicion">
+	<summary>
+Control tbLugarExpedicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbMoneda">
+	<summary>
+Control tbMoneda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_select_razon_social">
+	<summary>
+Control div_select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.select_razon_social">
+	<summary>
+Control select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_input_razon_social">
+	<summary>
+Control div_input_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbReceptorNombre">
+	<summary>
+Control tbReceptorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbReceptorRFC">
+	<summary>
+Control tbReceptorRFC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.correo">
+	<summary>
+Control correo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_direccion">
+	<summary>
+Control div_direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.direccion">
+	<summary>
+Control direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_cp">
+	<summary>
+Control div_cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.cp">
+	<summary>
+Control cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_ciudad">
+	<summary>
+Control div_ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.ciudad">
+	<summary>
+Control ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_estado">
+	<summary>
+Control div_estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.estado">
+	<summary>
+Control estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_pais">
+	<summary>
+Control div_pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.pais">
+	<summary>
+Control pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbFormaPago">
+	<summary>
+Control tbFormaPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbMetodoPago">
+	<summary>
+Control tbMetodoPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbReceptorUsoCFDI">
+	<summary>
+Control tbReceptorUsoCFDI.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbTipoRelacion">
+	<summary>
+Control tbTipoRelacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.gridDetalles">
+	<summary>
+Control gridDetalles.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.gridDetallesC">
+	<summary>
+Control gridDetallesC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.totalNC">
+	<summary>
+Control totalNC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.nompaciente">
+	<summary>
+Control nompaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.dcobservaciones">
+	<summary>
+Control dcobservaciones.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.div_UPfiscal">
+	<summary>
+Control div_UPfiscal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbUsuarioFoliosDigitales">
+	<summary>
+Control tbUsuarioFoliosDigitales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.tbPasswordFoliosDigitales">
+	<summary>
+Control tbPasswordFoliosDigitales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.codigo_paciente">
+	<summary>
+Control codigo_paciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.dpaciente">
+	<summary>
+Control dpaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.idcosto">
+	<summary>
+Control idcosto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.id_razon_social">
+	<summary>
+Control id_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.folio_consulta">
+	<summary>
+Control folio_consulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.bandera">
+	<summary>
+Control bandera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.C_facturar">
+	<summary>
+Control C_facturar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionNC.fconsulta">
+	<summary>
+Control fconsulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.nombre_usuario">
+	<summary>
+Control nombre_usuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.nombre">
+	<summary>
+Control nombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.pApellido">
+	<summary>
+Control pApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.sApellido">
+	<summary>
+Control sApellido.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.pass1">
+	<summary>
+Control pass1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Perfil.Pass2">
+	<summary>
+Control Pass2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.BtnSiGFac">
+	<summary>
+Control BtnSiGFac.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.BtnNoGFac">
+	<summary>
+Control BtnNoGFac.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.Fechas">
+	<summary>
+Control Fechas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.tipo_factura">
+	<summary>
+Control tipo_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.GdFacturas">
+	<summary>
+Control GdFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.Hdgfacturas">
+	<summary>
+Control Hdgfacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.HdIndex">
+	<summary>
+Control HdIndex.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.HFolioF">
+	<summary>
+Control HFolioF.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.HdTotal">
+	<summary>
+Control HdTotal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.correo_confirmar">
+	<summary>
+Control correo_confirmar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.folio_factura">
+	<summary>
+Control folio_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.serie_factura">
+	<summary>
+Control serie_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.estado_factura">
+	<summary>
+Control estado_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturaspagos.HD_IdFactura">
+	<summary>
+Control HD_IdFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:AgeMED.facturaspagos.Master">
+	<summary>
+Propiedad Master.
+</summary>
+	<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member><member name="P:AgeMED.cookies.ssidsesion">
+******* sesion 
+
+</member><member name="P:AgeMED.cookies.rememberpass">
+rememberme
+
+</member><member name="P:AgeMED.cookies.cnfempresa">
+configuracion
+
+</member><member name="P:AgeMED.cookies.mirequest">
+******* page 
+
+</member><member name="F:AgeMED.Site1.head">
+	<summary>
+Control head.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.UpdatePanel2">
+	<summary>
+Control UpdatePanel2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.ScripftManager1">
+	<summary>
+Control ScripftManager1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblContAgendados">
+	<summary>
+Control LblContAgendados.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblContConfirmadas">
+	<summary>
+Control LblContConfirmadas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblContEspera">
+	<summary>
+Control LblContEspera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblContEstudio">
+	<summary>
+Control LblContEstudio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblContCanceladas">
+	<summary>
+Control LblContCanceladas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.ListBoxPacientesCancelados">
+	<summary>
+Control ListBoxPacientesCancelados.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblContFinalizadas">
+	<summary>
+Control LblContFinalizadas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblPorcentajeMedicoMeta">
+	<summary>
+Control LblPorcentajeMedicoMeta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblPorcentajeCompletadoMedico">
+	<summary>
+Control LblPorcentajeCompletadoMedico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblPorcentajeBarra">
+	<summary>
+Control LblPorcentajeBarra.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblHonorarios">
+	<summary>
+Control LblHonorarios.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblInsumos">
+	<summary>
+Control LblInsumos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.ImgUsuario1">
+	<summary>
+Control ImgUsuario1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblUsuario">
+	<summary>
+Control LblUsuario.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.ImgUsuario2">
+	<summary>
+Control ImgUsuario2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblUsuarioCuadro">
+	<summary>
+Control LblUsuarioCuadro.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblUsuarioPuesto">
+	<summary>
+Control LblUsuarioPuesto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.BtnCerrarSesion">
+	<summary>
+Control BtnCerrarSesion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.ImgUsuario3">
+	<summary>
+Control ImgUsuario3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.LblUsuarioBarraLateral">
+	<summary>
+Control LblUsuarioBarraLateral.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.ContentPlaceHolder1">
+	<summary>
+Control ContentPlaceHolder1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.Site1.btnDisableEnter">
+	<summary>
+Control btnDisableEnter.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.BtnSiGFac">
+	<summary>
+Control BtnSiGFac.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.BtnNoGFac">
+	<summary>
+Control BtnNoGFac.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.div_3">
+	<summary>
+Control div_3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.Fechas">
+	<summary>
+Control Fechas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.div_1">
+	<summary>
+Control div_1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.tipo_factura">
+	<summary>
+Control tipo_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.div_2">
+	<summary>
+Control div_2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.GdFacturas">
+	<summary>
+Control GdFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.Hdgfacturas">
+	<summary>
+Control Hdgfacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.HdIndex">
+	<summary>
+Control HdIndex.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.HFolioF">
+	<summary>
+Control HFolioF.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.HdTotal">
+	<summary>
+Control HdTotal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.correo_confirmar">
+	<summary>
+Control correo_confirmar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.folio_factura">
+	<summary>
+Control folio_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.serie_factura">
+	<summary>
+Control serie_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.estado_factura">
+	<summary>
+Control estado_factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.div_select_razon_social">
+	<summary>
+Control div_select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.select_razon_social">
+	<summary>
+Control select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.div_input_razon_social">
+	<summary>
+Control div_input_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.input_razon_social">
+	<summary>
+Control input_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.rfc">
+	<summary>
+Control rfc.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.rfRFC">
+	<summary>
+Control rfRFC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.correo">
+	<summary>
+Control correo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.rfEmail">
+	<summary>
+Control rfEmail.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.direccion">
+	<summary>
+Control direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.cp">
+	<summary>
+Control cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.ciudad">
+	<summary>
+Control ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.estado">
+	<summary>
+Control estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.pais">
+	<summary>
+Control pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.GdConsultasXpagar">
+	<summary>
+Control GdConsultasXpagar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.observacionesf">
+	<summary>
+Control observacionesf.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.codigo_paciente">
+	<summary>
+Control codigo_paciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.id_razon_social">
+	<summary>
+Control id_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.folio_consulta">
+	<summary>
+Control folio_consulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.bandera">
+	<summary>
+Control bandera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.fconsulta">
+	<summary>
+Control fconsulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.facturasclientes.HD_IdFactura">
+	<summary>
+Control HD_IdFactura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:AgeMED.facturasclientes.Master">
+	<summary>
+Propiedad Master.
+</summary>
+	<remarks>
+Propiedad generada automáticamente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.box_BusquedaPaciente">
+	<summary>
+Control box_BusquedaPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.UpdatePanelCita">
+	<summary>
+Control UpdatePanelCita.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxbPaterno">
+	<summary>
+Control TxbPaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxbPaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbPaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxbMaterno">
+	<summary>
+Control TxbMaterno.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxbMaterno_TextBoxWatermarkExtender">
+	<summary>
+Control TxbMaterno_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxbNombre">
+	<summary>
+Control TxbNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxbNombre_TextBoxWatermarkExtender">
+	<summary>
+Control TxbNombre_TextBoxWatermarkExtender.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.BotonBuscar">
+	<summary>
+Control BotonBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LstBoxPacientes">
+	<summary>
+Control LstBoxPacientes.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.UpdatePanel3">
+	<summary>
+Control UpdatePanel3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.panelError">
+	<summary>
+Control panelError.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblNomPaciente">
+	<summary>
+Control LblNomPaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelAviso2">
+	<summary>
+Control PanelAviso2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblAviso">
+	<summary>
+Control LblAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelDesicion2">
+	<summary>
+Control PanelDesicion2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblDesicion">
+	<summary>
+Control LblDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.BtnSi2">
+	<summary>
+Control BtnSi2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.BtnNo2">
+	<summary>
+Control BtnNo2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelCritico2">
+	<summary>
+Control PanelCritico2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.Lblcritico">
+	<summary>
+Control Lblcritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelAdvertencia2">
+	<summary>
+Control PanelAdvertencia2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.LblAdvertencia">
+	<summary>
+Control LblAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_1">
+	<summary>
+Control div_1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.BtnCargosManuales2">
+	<summary>
+Control BtnCargosManuales2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_2">
+	<summary>
+Control div_2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DDTiposDeCargos">
+	<summary>
+Control DDTiposDeCargos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_3">
+	<summary>
+Control div_3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DdConsultorioMedico">
+	<summary>
+Control DdConsultorioMedico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.dtgCargosConsultas">
+	<summary>
+Control dtgCargosConsultas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DtgCargosManuales">
+	<summary>
+Control DtgCargosManuales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.btn_facturar">
+	<summary>
+Control btn_facturar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.btn_facturarC">
+	<summary>
+Control btn_facturarC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.ModalPopupExtender1">
+	<summary>
+Control ModalPopupExtender1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.origen_reporte">
+	<summary>
+Control origen_reporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.visor_reporte">
+	<summary>
+Control visor_reporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.PanelModal">
+	<summary>
+Control PanelModal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.UpdatePanel2">
+	<summary>
+Control UpdatePanel2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div1">
+	<summary>
+Control div1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.txtClaveProdServ">
+	<summary>
+Control txtClaveProdServ.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.txtClaveUnidad">
+	<summary>
+Control txtClaveUnidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.txtUnidad">
+	<summary>
+Control txtUnidad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.txtNoIdentificacion">
+	<summary>
+Control txtNoIdentificacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DdConceptoPago">
+	<summary>
+Control DdConceptoPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DdMedico">
+	<summary>
+Control DdMedico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxtDescripcion">
+	<summary>
+Control TxtDescripcion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxtImporte">
+	<summary>
+Control TxtImporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DdIVA">
+	<summary>
+Control DdIVA.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxtIVA">
+	<summary>
+Control TxtIVA.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DdISR">
+	<summary>
+Control DdISR.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxtISR">
+	<summary>
+Control TxtISR.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.DdTipoDePago">
+	<summary>
+Control DdTipoDePago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxtReferencia">
+	<summary>
+Control TxtReferencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.TxtAnotaciones">
+	<summary>
+Control TxtAnotaciones.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.btnCargosManuales">
+	<summary>
+Control btnCargosManuales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_dfacturacion">
+	<summary>
+Control div_dfacturacion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbVersion">
+	<summary>
+Control tbVersion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbTipoComprobante">
+	<summary>
+Control tbTipoComprobante.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbSerie">
+	<summary>
+Control tbSerie.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbFolio">
+	<summary>
+Control tbFolio.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.dtpFecha">
+	<summary>
+Control dtpFecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_buscaremisor">
+	<summary>
+Control div_buscaremisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_busqueda_emisor">
+	<summary>
+Control div_busqueda_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.selectEmisorNombre">
+	<summary>
+Control selectEmisorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_emisor">
+	<summary>
+Control div_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_input_emisor">
+	<summary>
+Control div_input_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbEmisorNombre">
+	<summary>
+Control tbEmisorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbEmisorRFC">
+	<summary>
+Control tbEmisorRFC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbEmisorRegimenFiscal">
+	<summary>
+Control tbEmisorRegimenFiscal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbLugarExpedicion">
+	<summary>
+Control tbLugarExpedicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbMoneda">
+	<summary>
+Control tbMoneda.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_select_razon_social">
+	<summary>
+Control div_select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.select_razon_social">
+	<summary>
+Control select_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_input_razon_social">
+	<summary>
+Control div_input_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbReceptorNombre">
+	<summary>
+Control tbReceptorNombre.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbReceptorRFC">
+	<summary>
+Control tbReceptorRFC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.correo">
+	<summary>
+Control correo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_direccion">
+	<summary>
+Control div_direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.direccion">
+	<summary>
+Control direccion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_cp">
+	<summary>
+Control div_cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.cp">
+	<summary>
+Control cp.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_ciudad">
+	<summary>
+Control div_ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.ciudad">
+	<summary>
+Control ciudad.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_estado">
+	<summary>
+Control div_estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.estado">
+	<summary>
+Control estado.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_pais">
+	<summary>
+Control div_pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.pais">
+	<summary>
+Control pais.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbFormaPago">
+	<summary>
+Control tbFormaPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbMetodoPago">
+	<summary>
+Control tbMetodoPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbReceptorUsoCFDI">
+	<summary>
+Control tbReceptorUsoCFDI.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.gridDetalles">
+	<summary>
+Control gridDetalles.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.gridDetallesC">
+	<summary>
+Control gridDetallesC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.nompaciente">
+	<summary>
+Control nompaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.dcobservaciones">
+	<summary>
+Control dcobservaciones.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.div_UPfiscal">
+	<summary>
+Control div_UPfiscal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbUsuarioFoliosDigitales">
+	<summary>
+Control tbUsuarioFoliosDigitales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.tbPasswordFoliosDigitales">
+	<summary>
+Control tbPasswordFoliosDigitales.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.codigo_paciente">
+	<summary>
+Control codigo_paciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.dpaciente">
+	<summary>
+Control dpaciente.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.idcosto">
+	<summary>
+Control idcosto.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.id_razon_social">
+	<summary>
+Control id_razon_social.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.folio_consulta">
+	<summary>
+Control folio_consulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.bandera">
+	<summary>
+Control bandera.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.banderae">
+	<summary>
+Control banderae.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.id_emisor">
+	<summary>
+Control id_emisor.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.Agrupar_Factura">
+	<summary>
+Control Agrupar_Factura.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.C_facturar">
+	<summary>
+Control C_facturar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.CM_facturar">
+	<summary>
+Control CM_facturar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.FacturacionClientes1.fconsulta">
+	<summary>
+Control fconsulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="P:AgeMED.Numalet.Decimales">
+	<summary>
+ Indica la cantidad de decimales que se pasarán a entero para la conversión
+ </summary>
+	<remarks>Esta propiedad cambia al cambiar MascaraDecimal por un valor que empieze con '0'</remarks>
+</member><member name="P:AgeMED.Numalet.CultureInfo">
+	<summary>
+ Objeto CultureInfo utilizado para convertir las cadenas de entrada en números
+ </summary>
+</member><member name="P:AgeMED.Numalet.SeparadorDecimalSalida">
+	<summary>
+ Indica la cadena a intercalar entre la parte entera y la decimal del número
+ </summary>
+</member><member name="P:AgeMED.Numalet.MascaraSalidaDecimal">
+	<summary>
+ Indica el formato que se le dara a la parte decimal del número
+ </summary>
+</member><member name="P:AgeMED.Numalet.LetraCapital">
+	<summary>
+ Indica si la primera letra del resultado debe estár en mayúscula
+ </summary>
+</member><member name="P:AgeMED.Numalet.ConvertirDecimales">
+	<summary>
+ Indica si se deben convertir los decimales a su expresión nominal
+ </summary>
+</member><member name="P:AgeMED.Numalet.ApocoparUnoParteEntera">
+	<summary>
+ Indica si de debe cambiar "uno" por "un" en las unidades.
+ </summary>
+</member><member name="P:AgeMED.Numalet.ApocoparUnoParteDecimal">
+	<summary>
+ Determina si se debe apococopar el "uno" en la parte decimal
+ </summary>
+	<remarks>El valor de esta propiedad cambia al setear ConvertirDecimales</remarks>
+</member><member name="T:AgeMED.Numalet">
+	<summary>
+ Convierte números en su expresión numérica a su numeral cardinal
+ </summary>
+</member><member name="F:AgeMED.PruebaReporte.DdConsulta">
+	<summary>
+Control DdConsulta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PruebaReporte.DdMedico">
+	<summary>
+Control DdMedico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PruebaReporte.Fechas">
+	<summary>
+Control Fechas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PruebaReporte.BtnAceptar">
+	<summary>
+Control BtnAceptar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PruebaReporte.GdReporte">
+	<summary>
+Control GdReporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.PruebaReporte.HdIngresos">
+	<summary>
+Control HdIngresos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.UpdatePanel1">
+	<summary>
+Control UpdatePanel1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.PanelAvisos">
+	<summary>
+Control PanelAvisos.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.LblMensajeAviso">
+	<summary>
+Control LblMensajeAviso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.PanelDesicion">
+	<summary>
+Control PanelDesicion.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.LblMostarDecision">
+	<summary>
+Control LblMostarDecision.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.BtnSi1">
+	<summary>
+Control BtnSi1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.BtnNo1">
+	<summary>
+Control BtnNo1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.PanelCritico">
+	<summary>
+Control PanelCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.LblMensajeCritico">
+	<summary>
+Control LblMensajeCritico.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.PanelAdvertencia">
+	<summary>
+Control PanelAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.LblMensajeAdvertencia">
+	<summary>
+Control LblMensajeAdvertencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.sucursal">
+	<summary>
+Control sucursal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.Fecha">
+	<summary>
+Control Fecha.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.RequiredFieldValidator3">
+	<summary>
+Control RequiredFieldValidator3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.TxtImporte">
+	<summary>
+Control TxtImporte.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.RequiredFieldValidator1">
+	<summary>
+Control RequiredFieldValidator1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.editar_Referencia">
+	<summary>
+Control editar_Referencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.BtnBorrarReferencia">
+	<summary>
+Control BtnBorrarReferencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.TxtReferencia">
+	<summary>
+Control TxtReferencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.RequiredFieldValidator2">
+	<summary>
+Control RequiredFieldValidator2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.RequiredFieldValidator4">
+	<summary>
+Control RequiredFieldValidator4.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.BtnBuscar">
+	<summary>
+Control BtnBuscar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.BtnVer">
+	<summary>
+Control BtnVer.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.DdTipoPago">
+	<summary>
+Control DdTipoPago.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.DdCuenta">
+	<summary>
+Control DdCuenta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.observaciones">
+	<summary>
+Control observaciones.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.BtnGuardar">
+	<summary>
+Control BtnGuardar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.saldo">
+	<summary>
+Control saldo.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.UpdatePanelGDFacturas">
+	<summary>
+Control UpdatePanelGDFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.GdFacturas">
+	<summary>
+Control GdFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.Hdgfacturas">
+	<summary>
+Control Hdgfacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.HdIndex">
+	<summary>
+Control HdIndex.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.HdfolioIngreso">
+	<summary>
+Control HdfolioIngreso.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.HdAporteParcialFac">
+	<summary>
+Control HdAporteParcialFac.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.HdPregunta">
+	<summary>
+Control HdPregunta.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.HdReferencia">
+	<summary>
+Control HdReferencia.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.btn_conciliar">
+	<summary>
+Control btn_conciliar.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.dbsucursal">
+	<summary>
+Control dbsucursal.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.UpdatePanel2">
+	<summary>
+Control UpdatePanel2.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.LblSinFacturas">
+	<summary>
+Control LblSinFacturas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.GdFacConciliadas">
+	<summary>
+Control GdFacConciliadas.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.BtnDesasignarFAC">
+	<summary>
+Control BtnDesasignarFAC.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.UpdatePanel3">
+	<summary>
+Control UpdatePanel3.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.Label1">
+	<summary>
+Control Label1.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member><member name="F:AgeMED.conciliacionbancaria.GdBuscarReferencias">
+	<summary>
+Control GdBuscarReferencias.
+</summary>
+	<remarks>
+Campo generado automáticamente.
+Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+</remarks>
+</member>
+</members>
+</doc>

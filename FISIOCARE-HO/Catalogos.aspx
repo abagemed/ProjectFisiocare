@@ -1,0 +1,471 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Catalogos.aspx.vb" Inherits="Catalogos" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <link href="rsc/estilo.css" rel="stylesheet" type="text/css" />
+    <title>FISIOCARE</title>
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet" type="text/css" />
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css" />
+    <!-- bootstrap -->
+	<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <!-- Material Design Lite CSS -->
+	<link href="assets/plugins/material/material.min.css" rel="stylesheet" />
+	<link href="assets/css/material_style.css" rel="stylesheet" />
+	<!-- Theme Styles -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/plugins.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/responsive.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/theme-color.css" rel="stylesheet" type="text/css" />
+    <link href="assets/css/pages/typography.css" rel="stylesheet" type="text/css" />
+    <!-- favicon -->
+    <link rel="shortcut icon" href="imagenes/favicon.png" />
+    <!-- DataTables -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.16/af-2.2.2/b-1.5.1/b-colvis-1.5.1/b-flash-1.5.1/b-html5-1.5.1/b-print-1.5.1/cr-1.4.1/fc-3.2.4/fh-3.1.3/kt-2.3.2/r-2.2.1/rg-1.0.2/rr-1.2.3/sc-1.4.4/sl-1.2.5/datatables.min.css"/>
+
+
+</head>
+<body onload="javascript:if(history.length>0)history.go(+1)" class="page-header-fixed sidemenu-closed-hidelogo page-content-white page-md header-white dark-color logo-dark">
+
+<form id="form2" runat="server">
+    <div class="page-wrapper">
+        <!-- start header -->
+		<div class="page-header navbar navbar-fixed-top">
+            <div class="page-header-inner ">
+                <!-- logo start -->
+                <div class="page-logo">
+                    <a href="Default.aspx">
+                    <!--img alt="" src="imagenes/logo.png"-->
+                    <span class="logo-default" >Fisiocare</span> </a>
+                </div>
+                <!-- logo end -->
+				<ul class="nav navbar-nav navbar-left in">
+					<li><a href="#" class="menu-toggler sidebar-toggler font-size-20"><i class="fa fa-exchange" aria-hidden="true"></i></a></li>
+				</ul>
+                
+                <ul class="nav navbar-nav navbar-left in">
+                	<!-- start full screen button -->
+                    <li><a href="javascript:;" class="fullscreen-click font-size-20"><i class="fa fa-arrows-alt"></i></a></li>
+                    <!-- end full screen button -->
+                </ul>
+                <!-- start mobile menu -->
+                <a href="javascript:;" class="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span></span>
+                </a>
+               <!-- end mobile menu -->
+                <!-- start header menu -->
+                <div class="top-menu">
+                    <ul class="nav navbar-nav pull-right">
+                        <!-- start manage user dropdown -->
+ 						<li class="dropdown dropdown-user">
+                            <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                <img alt="" class="img-circle " src="imagenes/iso.png" />
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-default">
+                                <li>
+                                       <div class="pull-right">
+                                      <i class="fa fa-sign-out"></i><asp:Button ID="BtnCerrarSesion" runat="server" Text="Salir" CssClass="btn btn-danger btn-flat" />
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+        <!-- start page container -->
+        <div class="page-container">
+ 			<!-- start sidebar menu -->
+ 			<div class="sidebar-container">
+ 				<div class="sidemenu-container navbar-collapse collapse fixed-menu">
+	                <div id="remove-scroll" class="left-sidemenu">
+	                    <ul class="sidemenu  page-header-fixed slimscroll-style" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200" style="padding-top: 20px">
+	                        <li class="sidebar-toggler-wrapper hide">
+	                            <div class="sidebar-toggler">
+	                                <span></span>
+	                            </div>
+	                        </li>
+	                        <li class="sidebar-user-panel">
+	                            <div class="user-panel">
+	                                <div class="pull-left image">
+	                                    <img src="imagenes/iso.png" class="img-circle user-img-circle" alt="FisioCare" />
+	                                </div>
+	                                <div class="pull-left info">
+	                                    <p> Administrador</p>
+	                                    <small>fisiosm</small>
+	                                </div>
+	                            </div>
+	                        </li>
+                            <li class="nav-item">
+	                            <a href="#" runat="server" onServerClick="Pacientes" class="nav-link nav-toggle">
+	                                <i class="material-icons">accessible</i>
+	                                <span class="title">Pacientes</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                        </li>
+                            <li class="nav-item">
+	                            <a href="#" runat="server" onServerClick="Recibos" class="nav-link nav-toggle">
+	                                <i class="fa fa-file-text-o"></i>
+	                                <span class="title">Recibos</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                        </li>
+                            <li class="nav-item">
+	                            <a href="#" runat="server" onServerClick="Historial" class="nav-link nav-toggle">
+	                                <i class="fa fa-history"></i>
+	                                <span class="title">Historial</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                        </li>
+                            <li class="nav-item">
+	                            <a href="#" runat="server" onServerClick="Catalogos" class="nav-link nav-toggle">
+	                                <i class="fa fa-list-ol"></i>
+	                                <span class="title">Catálogos</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                        </li>
+                            <li class="nav-item">
+	                            <a href="#" runat="server" onServerClick="CorteCaja" class="nav-link nav-toggle">
+	                                <i class="fa fa-dollar"></i>
+	                                <span class="title">Corte de caja</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                        </li>
+                            <li class="nav-item">
+	                            <a href="#" runat="server" onServerClick="BloqueoCitas" class="nav-link nav-toggle">
+	                                <i class="fa fa-lock"></i>
+	                                <span class="title">Bloqueo de citas</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                        </li>
+                            <li class="nav-item">
+	                            <a href="VerCitas.aspx" class="nav-link nav-toggle">
+	                                <i class="fa fa-search"></i>
+	                                <span class="title">VerCitas</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                        </li>
+                            
+	                        <li class="nav-item">
+	                            <a href="#" class="nav-link nav-toggle">
+	                                <i class="fa fa-pencil"></i>
+	                                <span class="title">Facturación</span>
+                                	<span class="arrow"></span>
+	                            </a>
+	                            <ul class="sub-menu">
+	                                <li class="nav-item">
+	                                    <a href="https://facturacionho.agemed.com.mx" target="_blank" class="nav-link ">
+	                                        <span class="title">Facturación</span>
+	                                    </a>
+	                                </li>
+	                                <li class="nav-item ">
+	                                    <a href="#" runat="server" onServerClick="FacturasGeneradas" class="nav-link ">
+	                                        <span class="title">Facturas generadas</span>
+	                                    </a>
+	                                </li>
+	                            </ul>
+	                        </li>
+	                        
+	                    </ul>
+	                </div>
+                </div>
+            </div>
+			 <!-- end sidebar menu -->
+			<!-- start page content -->
+            <div class="page-content-wrapper">
+                <div class="page-content">
+                    <div class="page-bar">
+                        <div class="page-title-breadcrumb">
+                            <div class=" pull-left">
+                                <div class="page-title">Ver Citas</div>
+                            </div>
+                            <ol class="breadcrumb page-breadcrumb pull-right">
+                                <li><i class="fa fa-search"></i>&nbsp;<a class="parent-item" href="#">Ver Citas</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card card-box">
+                                        <div class="card-head">
+                                            <header>
+                                                <asp:Label ID="lblfecNom" runat="server"></asp:Label>
+                                                <asp:Label ID="lblfecha" runat="server" Text="Label" Visible="False"></asp:Label>
+                                                Ver Citas
+                                            </header>
+                                            <div class="tools">
+			                                    <a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                           <div class="row">
+                                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                    <input id="nombre" type="text" class="form-control" placeholder="Nombre">
+                                                </div>
+                                                <div class="col-lg-4 col-md-3 col-sm-12 col-xs-12">
+                                                    <input id="paterno" type="text" class="form-control" placeholder="Paterno">
+                                                </div>
+                                                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                                                    <input id="materno" type="text" class="form-control" placeholder="Materno">
+                                                </div>
+                                            </div>
+
+                                            <div class="row margin-top-10">
+                                                <div class="col-md-12">
+                                                    <button type="button" class="btn btn-primary btn-block" onclick="Control(1)"><i class="fa fa-search"></i> Buscar</button>
+                                                </div>
+                                            </div>
+
+                                            <div class="row margin-right-10">
+                                                <div class="col-md-12">
+                                                    <h3>Resultados de la búsqueda</h3>
+                                                    <select class="form-control" id="lista_pacientes" size="5">
+
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="row margin-top-10">
+                                                <div class="col-md-12">
+                                                    <button type="button" class="btn btn-success btn-block" onclick="Control(2)"><i class="fa fa-info"></i> Ver</button>
+                                                </div>
+                                            </div>
+                                           
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card card-box">
+                                        <div class="card-head">
+                                            <header>
+                                                Citas Programadas
+                                            </header>
+                                            <div class="tools">
+			                                    <a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <div class="col-md-12">
+                                                    <table class="table table-striped table-hover" id="tabla_programadas">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Folio</th>
+                                                                <th>Código Paciente</th>
+                                                                <th>Consultorio</th>
+                                                                <th>Turno</th>
+                                                                <th>Fecha</th>
+                                                                <th>Estado</th>
+                                                                <th>Cancelar</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody></tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="card card-box">
+                                        <div class="card-head">
+                                            <header>
+                                                Citas Pasadas
+                                            </header>
+                                            <div class="tools">
+			                                    <a class="t-collapse btn-color fa fa-chevron-down" href="javascript:;"></a>
+                                            </div>
+                                        </div>
+                                       
+                                        <div class="card-body">
+                                            <div class="form-group row">
+                                                <div class="col-md-12">
+                                                    <table class="table table-striped table-hover" id="tabla_pasadas">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Folio</th>
+                                                                <th>Fecha</th>
+                                                                <th>Estado</th>
+                                                                <th>Ver Expediente</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody></tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end page content -->
+           
+        </div>
+        <!-- end page container -->
+        <!-- start footer -->
+        <div class="page-footer">
+            <div class="page-footer-inner"> 2019 &copy; FisioCare
+                <a href="#" target="_top" class="makerCss">MEDSOL SISTEMAS</a>
+            </div>
+            <div class="scroll-to-top">
+                <i class="material-icons">eject</i>
+            </div>
+        </div>
+        <!-- end footer -->
+    </div>
+
+
+
+
+</form>
+
+    <!-- start js include path -->
+    <script type="text/javascript" src="assets/plugins/jquery/jquery.min.js" ></script>
+	<script type="text/javascript" src="assets/plugins/popper/popper.min.js" ></script>
+    <script type="text/javascript" src="assets/plugins/jquery-blockui/jquery.blockui.min.js" ></script>
+	<script type="text/javascript" src="assets/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <!-- bootstrap -->
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js" ></script>
+    <!-- Common js-->
+	<script type="text/javascript" src="assets/js/app.js" ></script>
+    <script type="text/javascript" src="assets/js/layout.js" ></script>
+	<script type="text/javascript" src="assets/js/theme-color.js" ></script>
+	<!-- Material -->
+	<script type="text/javascript" src="assets/plugins/material/material.min.js"></script>
+    <!-- end js include path -->
+    <script>
+        $(document).ready(function () {
+            $('[data-tooltip="tooltip"]').tooltip();
+        })
+    </script>
+    <!-- DataTables -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/jszip-2.5.0/dt-1.10.16/af-2.2.2/b-1.5.1/b-colvis-1.5.1/b-flash-1.5.1/b-html5-1.5.1/b-print-1.5.1/cr-1.4.1/fc-3.2.4/fh-3.1.3/kt-2.3.2/r-2.2.1/rg-1.0.2/rr-1.2.3/sc-1.4.4/sl-1.2.5/datatables.min.js"></script>
+    <script>
+        $(function () {
+
+            /*
+            $('#tabla_programadas').DataTable({
+                "language": { url: "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json" },
+                "ordering": false,
+                "paging": false,
+                "searching": true,
+                "info": false,
+                "fixedHeader": true,
+                "responsive": true,
+                "order": [[1, "asc"]],                
+            });
+
+            $('#tabla_pasadas').DataTable({
+                "language": { url: "//cdn.datatables.net/plug-ins/1.10.19/i18n/Spanish.json" },
+                "ordering": false,
+                "paging": false,
+                "searching": true,
+                "info": false,
+                "fixedHeader": true,
+                "responsive": true,
+                "order": [[1, "asc"]],
+            });
+            */
+        });
+    </script>
+
+
+    <script>
+        $(document).ready(function () {
+            $('[data-tooltip="tooltip"]').tooltip();            
+        })
+
+        function Control(opc, id) {
+
+            $.ajax({
+                type: 'POST',
+                url: "./VerCitas.ashx",
+                async: false,
+                data: {
+                    opcion: opc,
+                    id:id,
+                    nombre: $('#nombre').val(),
+                    paterno: $('#paterno').val(),
+                    materno: $('#materno').val(),
+                    id_paciente: $('#lista_pacientes').val()
+                },
+                success: function (data) {
+                    console.log("success! " + data);
+                    var obj = JSON.parse(data);
+
+                    if (opc == 1) //Leer los datos
+                    {
+                        $('#lista_pacientes').empty();
+                        $.each(obj, function (key, registro) {
+                            $('#lista_pacientes').append('<option value="' + registro.id + '">' + registro.nombre + '</option>');
+
+                        });
+                        
+                    }
+                    if (opc == 2)//Ver datos citas programadas
+                    {
+                        $("#tabla_programadas tbody").empty();
+                        if (obj.resp == null) {
+                            $.each(obj, function (key, registro) {
+                                $("#tabla_programadas tbody").append('<tr><td>' + registro.folio + '</td><td>' + registro.codigo + '</td><td>' + registro.consultorio + '</td><td>' + registro.turno + '</td><td>' + registro.fecha + '</td><td>' + registro.estado + '</td><td><button type="button" class="btn btn-danger btn-block" onclick="Control(4,'+registro.folio+')"><i class="fa fa-close"></i> Cancelar</button></td></tr>');
+                            });
+                        }
+                        Control(3);
+                    }
+                    if (opc == 3)//Ver datos citas pasadas
+                    {
+                        $("#tabla_pasadas tbody").empty();
+                        if (obj.resp == null) {
+                            $.each(obj, function (key, registro) {
+                                $("#tabla_pasadas tbody").append('<tr><td>' + registro.folio + '</td><td>' + registro.fecha + '</td><td>' + registro.estado + '</td><td><a href="expedientemedico.aspx?elidCita='+registro.folio+'&posicion='+registro.consultorio+'&turno='+registro.turno+'&fecha='+registro.fecha+'" class="btn btn-info btn-block">Ver expediente</a></td></tr>');
+                            });
+                        }
+                    }
+                    if (opc == 4)
+                    {
+                        //Cancelar cita y recuperar la tabla de citas programadas
+                        Control(2);
+                    }
+                   
+                    
+                }
+            });
+        }
+    </script>
+
+
+
+</body>
+</html>
+

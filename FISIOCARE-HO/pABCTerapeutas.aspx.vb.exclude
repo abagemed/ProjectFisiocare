@@ -1,0 +1,698 @@
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Public Class ABCTerapeutas
+    Inherits System.Web.UI.Page
+    Dim SQL As String
+    Dim fun As New miclases
+    Dim funciones As New miclases
+
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not IsPostBack Then
+            If Session("Pconfiguracion") = 0 Then
+                Response.Redirect("agenda.aspx")
+            End If
+            CargarGrdUsuarios()
+        End If
+    End Sub
+
+    Private Sub CargarGrdUsuarios()
+        Dim clsDatos As New ClaseDatos
+        Dim dt As New DataTable
+        Dim strSQL As String
+        strSQL = "SELECT codigoUsuario,(nombre+' '+primerApellido+' '+segundoApellido) as nombre,login,password,rol  " & _
+                "FROM [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+                 "where codigoEmpresa = " & Session("codigoEmpresa") & " And status = 1  "
+        If clsDatos.cargatabla(strSQL, dt) = 0 Then
+            If dt.Rows.Count > 0 Then
+                GdUsuarios.DataSource = dt
+                GdUsuarios.DataBind()
+            Else
+                LblMensajeAdvertencia.Text = "No se encontro el usuario, favor de reportarlo a sistemas"
+                PanelAdvertencia.Visible = True
+            End If
+        Else
+            LblMensajeCritico.Text = clsDatos.MensajeError
+            PanelCritico.Visible = True
+        End If
+    End Sub
+    Private Sub bucarDatos(ByRef codigoUsuario As String)
+        Dim clsDatos As New ClaseDatos
+        Dim dt As New DataTable
+        Dim strSQL As String
+        LoginEditar.Value = ""
+        strSQL = "SELECT nombre,primerApellido,segundoApellido,especialidad,cedula,login,password,rol,firma,email  " & _
+                "FROM [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+                 "where codigoEmpresa = " & Session("codigoEmpresa") & " And status = 1 And codigoUsuario ='" & codigoUsuario & "' "
+        If clsDatos.cargatabla(strSQL, dt) = 0 Then
+            If dt.Rows.Count > 0 Then
+                txtLogin.Text = dt.Rows(0).Item("login")
+                LoginEditar.Value = dt.Rows(0).Item("login")
+                'txtLogin.ReadOnly = True
+                txtNombre.Text = dt.Rows(0).Item("nombre")
+                txtPaterno.Text = dt.Rows(0).Item("primerApellido")
+                txtMaterno.Text = dt.Rows(0).Item("segundoApellido")
+                txtPass.Text = dt.Rows(0).Item("password")
+                If Not IsDBNull(dt.Rows(0).Item("cedula")) Then
+                    txtEspecialidad.Text = dt.Rows(0).Item("especialidad")
+                End If
+                If Not IsDBNull(dt.Rows(0).Item("cedula")) Then
+                    txtCedula.Text = dt.Rows(0).Item("cedula")
+                End If
+                If Not IsDBNull(dt.Rows(0).Item("rol")) Then
+                    If dt.Rows(0).Item("rol") = "RX" Then
+                        rol1.Value = 1
+                    End If
+                    If dt.Rows(0).Item("rol") = "RE" Then
+                        rol1.Value = 2
+                    End If
+                    If dt.Rows(0).Item("rol") = "DR" Then
+                        rol1.Value = 3
+                    End If
+                    If dt.Rows(0).Item("rol") = "CX" Then
+                        rol1.Value = 4
+                    End If
+                    If dt.Rows(0).Item("rol") = "AN" Then
+                        rol1.Value = 5
+                    End If
+                    If dt.Rows(0).Item("rol") = "AY" Then
+                        rol1.Value = 6
+                    End If
+                    If dt.Rows(0).Item("rol") = "ENF" Then
+                        rol1.Value = 7
+                    End If
+
+                End If
+
+                ''proceso de firma AB21052019
+
+                If Not IsDBNull(dt.Rows(0).Item("firma")) Then
+                    firma_editar.Value = dt.Rows(0).Item("firma")
+                End If
+
+                'proceso de email AB13/06/2019
+                If Not IsDBNull(dt.Rows(0).Item("email")) Then
+                    txtCorreoE.Text = dt.Rows(0).Item("email")
+                Else
+                    txtCorreoE.Text = ""
+                End If
+
+            Else
+                LblMensajeAdvertencia.Text = "No se encontro el usuario, favor de reportarlo a sistemas"
+                PanelAdvertencia.Visible = True
+            End If
+        Else
+            LblMensajeCritico.Text = clsDatos.MensajeError
+            PanelCritico.Visible = True
+        End If
+
+        strSQL = "SELECT expediente, facturacion, pagos,EditarPagos, configuracion, reportes,borrarAbonos,AgregarCPago, EliminarCpago, ModEtapaFinalizada, ModExpedienteEFinalizada, PADiagnostico, PermisoBloqueos, AgruparFactura  " & _
+               "FROM [" & clsDatos.BaseDatos & "].[dbo].[AgPermisos] " & _
+                "where codigoEmpresa = " & Session("codigoEmpresa") & " And codigoUsuario ='" & codigoUsuario & "' "
+        If clsDatos.cargatabla(strSQL, dt) = 0 Then
+            If dt.Rows.Count > 0 Then
+
+                If Not IsDBNull(dt.Rows(0).Item("expediente")) Then
+                    If dt.Rows(0).Item("expediente") = 1 Then
+                        ChkBoxExpedientee.Checked = True
+                    Else
+                        ChkBoxExpedientee.Checked = False
+                    End If
+                End If
+
+                If Not IsDBNull(dt.Rows(0).Item("facturacion")) Then
+                    If dt.Rows(0).Item("facturacion") = 1 Then
+                        ChkBoxFacturacione.Checked = True
+                    Else
+                        ChkBoxFacturacione.Checked = False
+                    End If
+                End If
+                If Not IsDBNull(dt.Rows(0).Item("pagos")) Then
+                    If dt.Rows(0).Item("pagos") = 1 Then
+                        ChkBoxPagose.Checked = True
+                    Else
+                        ChkBoxPagose.Checked = False
+                    End If
+                End If
+                If Not IsDBNull(dt.Rows(0).Item("EditarPagos")) Then
+                    If dt.Rows(0).Item("EditarPagos") = 1 Then
+                        ChkBoxEditarPagose.Checked = True
+                    Else
+                        ChkBoxEditarPagose.Checked = False
+                    End If
+                Else
+                    ChkBoxEditarPagose.Checked = False
+                End If
+                If Not IsDBNull(dt.Rows(0).Item("configuracion")) Then
+                    If dt.Rows(0).Item("configuracion") = 1 Then
+                        ChkBoxConfiguracione.Checked = True
+                    Else
+                        ChkBoxConfiguracione.Checked = False
+                    End If
+                End If
+                If Not IsDBNull(dt.Rows(0).Item("reportes")) Then
+                    If dt.Rows(0).Item("reportes") = 1 Then
+                        ChkBoxReportese.Checked = True
+                    Else
+                        ChkBoxReportese.Checked = False
+                    End If
+                End If
+                If Not IsDBNull(dt.Rows(0).Item("borrarAbonos")) Then
+                    If dt.Rows(0).Item("borrarAbonos") = 1 Then
+                        ChkBoxBorrarAbonos.Checked = True
+                    Else
+                        ChkBoxBorrarAbonos.Checked = False
+                    End If
+                End If
+
+                If Not IsDBNull(dt.Rows(0).Item("AgregarCPago")) Then
+                    If dt.Rows(0).Item("AgregarCPago") = 1 Then
+                        ChkBoxAgregarConceptose.Checked = True
+                    Else
+                        ChkBoxAgregarConceptose.Checked = False
+                    End If
+                End If
+
+                If Not IsDBNull(dt.Rows(0).Item("EliminarCpago")) Then
+                    If dt.Rows(0).Item("EliminarCpago") = 1 Then
+                        ChkBorraroConceptose.Checked = True
+                    Else
+                        ChkBorraroConceptose.Checked = False
+                    End If
+                End If
+
+                If Not IsDBNull(dt.Rows(0).Item("ModExpedienteEFinalizada")) Then
+                    If dt.Rows(0).Item("ModExpedienteEFinalizada") = 1 Then
+                        efe_1_2.Checked = True
+                    Else
+                        efe_1_2.Checked = False
+                    End If
+                End If
+
+                If Not IsDBNull(dt.Rows(0).Item("ModEtapaFinalizada")) Then
+                    If dt.Rows(0).Item("ModEtapaFinalizada") = 1 Then
+                        eft_2_2.Checked = True
+                    Else
+                        eft_2_2.Checked = False
+                    End If
+                End If
+
+                If Not IsDBNull(dt.Rows(0).Item("PADiagnostico")) Then
+                    If dt.Rows(0).Item("PADiagnostico") = 1 Then
+                        ChkBoxPDiagnosticoPEdit.Checked = True
+                    Else
+                        ChkBoxPDiagnosticoPEdit.Checked = False
+                    End If
+                Else
+                    ChkBoxPDiagnosticoPEdit.Checked = False
+                End If
+
+                'Bloqueos AB28/03/2019
+                If Not IsDBNull(dt.Rows(0).Item("PermisoBloqueos")) Then
+                    If dt.Rows(0).Item("PermisoBloqueos") = 1 Then
+                        ChkBoxPBloqueoEdit.Checked = True
+                    Else
+                        ChkBoxPBloqueoEdit.Checked = False
+                    End If
+                Else
+                    ChkBoxPBloqueoEdit.Checked = False
+                End If
+
+                'AgruparConceptos AB23/04/2019
+                If Not IsDBNull(dt.Rows(0).Item("AgruparFactura")) Then
+                    If dt.Rows(0).Item("AgruparFactura") = 1 Then
+                        ChkBoxPAgruparConceptosEdit.Checked = True
+                    Else
+                        ChkBoxPAgruparConceptosEdit.Checked = False
+                    End If
+                Else
+                    ChkBoxPAgruparConceptosEdit.Checked = False
+                End If
+
+            Else
+                LblMensajeAdvertencia.Text = "No se encontro perfil de usuario"
+                PanelAdvertencia.Visible = True
+            End If
+        Else
+            LblMensajeCritico.Text = clsDatos.MensajeError
+            PanelCritico.Visible = True
+        End If
+    End Sub
+
+    Protected Sub BtnGuardarEdit_Click(sender As Object, e As EventArgs)
+        ocultarPaneles()
+        Dim clsDatos As New ClaseDatos
+        Dim dt As New DataTable
+        Dim strSQL, expediente, pagos, editarPagos, configuracion, facturacion, reportes, borrarAbonos, agregarconcepto, borrarconcepto, ModExpedienteF, ModEtapaF, ADiagnostico, ModPermisoBloqueos, ModPermisoAgruparConceptos As String
+
+        If ChkBoxExpedientee.Checked = True Then
+            expediente = 1
+        Else
+            expediente = 0
+        End If
+
+        If ChkBoxConfiguracione.Checked = True Then
+            configuracion = 1
+        Else
+            configuracion = 0
+        End If
+
+        If ChkBoxPagose.Checked = True Then
+            pagos = 1
+        Else
+            pagos = 0
+        End If
+
+        If ChkBoxEditarPagose.Checked = True Then
+            editarPagos = 1
+        Else
+            editarPagos = 0
+        End If
+
+        If ChkBoxFacturacione.Checked = True Then
+            facturacion = 1
+        Else
+            facturacion = 0
+        End If
+
+        If ChkBoxReportese.Checked = True Then
+            reportes = 1
+        Else
+            reportes = 0
+        End If
+
+        If ChkBoxBorrarAbonos.Checked = True Then
+            borrarAbonos = 1
+        Else
+            borrarAbonos = 0
+        End If
+
+        If ChkBoxAgregarConceptose.Checked = True Then
+            agregarconcepto = 1
+        Else
+            agregarconcepto = 0
+        End If
+
+        If ChkBorraroConceptose.Checked = True Then
+            borrarconcepto = 1
+        Else
+            borrarconcepto = 0
+        End If
+
+
+        If efe_1_2.Checked = True Then
+            ModExpedienteF = 1
+        Else
+            ModExpedienteF = 0
+        End If
+
+        If eft_2_2.Checked = True Then
+            ModEtapaF = 1
+        Else
+            ModEtapaF = 0
+        End If
+
+        If ChkBoxPDiagnosticoPEdit.Checked = True Then
+            ADiagnostico = 1
+        Else
+            ADiagnostico = 0
+        End If
+
+        'AB 28/03/2019
+        If ChkBoxPBloqueoEdit.Checked = True Then
+            ModPermisoBloqueos = 1
+        Else
+            ModPermisoBloqueos = 0
+        End If
+
+        'AB 23/04/2019
+        If ChkBoxPAgruparConceptosEdit.Checked = True Then
+            ModPermisoAgruparConceptos = 1
+        Else
+            ModPermisoAgruparConceptos = 0
+        End If
+
+
+
+        Dim rol As String = ""
+        If rol1.Value = 1 Then
+            rol = "RX"
+        End If
+        If rol1.Value = 2 Then
+            rol = "RE"
+        End If
+        If rol1.Value = 3 Then
+            rol = "DR"
+        End If
+        If rol1.Value = 4 Then
+            rol = "CX"
+        End If
+        If rol1.Value = 5 Then
+            rol = "AN"
+        End If
+        If rol1.Value = 6 Then
+            rol = "AY"
+        End If
+        If rol1.Value = 7 Then
+            rol = "ENF"
+        End If
+
+
+
+        If txtLogin.Text = LoginEditar.Value Then
+            strSQL = "update [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+       "set nombre='" & txtNombre.Text.ToUpper & "',primerApellido='" & txtPaterno.Text.ToUpper & "',segundoApellido='" & txtMaterno.Text.ToUpper & "',especialidad='" & txtEspecialidad.Text.ToUpper & "',cedula='" & txtCedula.Text & "',password='" & txtPass.Text & "',login='" & txtLogin.Text & "',rol='" & rol & "',firma='" & firma_editar.Value & "',email='" & txtCorreoE.Text & "' " & _
+       "where codigoUsuario='" & HdUsuarioEdit.Value & "' and codigoEmpresa='" & Session("codigoEmpresa") & "' and status=1"
+            strSQL += " update [" & clsDatos.BaseDatos & "].[dbo].[AgPermisos] set expediente='" & expediente & "',configuracion='" & configuracion & "',pagos='" & pagos & "',EditarPagos='" & editarPagos & "',facturacion='" & facturacion & "',reportes='" & reportes & "',borrarAbonos='" & borrarAbonos & "',AgregarCPago='" & agregarconcepto & "',EliminarCpago='" & borrarconcepto & "', ModEtapaFinalizada='" & ModEtapaF & "',ModExpedienteEFinalizada='" & ModExpedienteF & "',PADiagnostico='" & ADiagnostico & "',PermisoBloqueos='" & ModPermisoBloqueos & "',AgruparFactura='" & ModPermisoAgruparConceptos & "' where codigoUsuario='" & HdUsuarioEdit.Value & "' and codigoEmpresa='" & Session("codigoEmpresa") & "' "
+            clsDatos.cargaComando(strSQL)
+            If clsDatos.ejecutar = 0 Then
+                LblMensajeAviso.Text = "Se realizo el cambio correctamente"
+                PanelAvisos.Visible = True
+                PanelAvisos.Focus()
+                CargarGrdUsuarios()
+
+            Else
+                LblMensajeCritico.Text = clsDatos.MensajeError
+                PanelCritico.Visible = True
+            End If
+        Else
+
+            strSQL = "SELECT login  FROM [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+                    "where login='" & txtLogin.Text & "' and status=1"
+            If clsDatos.cargatabla(strSQL, dt) = 0 Then
+                If dt.Rows.Count > 0 Then
+                    LblMensajeAdvertencia.Text = "El nombre de usuario ya existe o usuario no valido"
+                    PanelAdvertencia.Visible = True
+                    PanelAdvertencia.Focus()
+                    Exit Sub
+
+                End If
+            End If
+
+            strSQL = "update [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+                    "set nombre='" & txtNombre.Text.ToUpper & "',primerApellido='" & txtPaterno.Text.ToUpper & "',segundoApellido='" & txtMaterno.Text.ToUpper & "',especialidad='" & txtEspecialidad.Text.ToUpper & "',cedula='" & txtCedula.Text & "',password='" & txtPass.Text & "',login='" & txtLogin.Text & "',rol='" & rol & "',firma='" & firma_editar.Value & "',email='" & txtCorreoE.Text & "' " & _
+                    "where codigoUsuario='" & HdUsuarioEdit.Value & "' and codigoEmpresa='" & Session("codigoEmpresa") & "' and status=1"
+            strSQL += " update [" & clsDatos.BaseDatos & "].[dbo].[AgPermisos] set expediente='" & expediente & "',configuracion='" & configuracion & "',pagos='" & pagos & "',EditarPagos='" & editarPagos & "',facturacion='" & facturacion & "',reportes='" & reportes & "',borrarAbonos='" & borrarAbonos & "',AgregarCPago='" & agregarconcepto & "',EliminarCpago='" & borrarconcepto & "', ModEtapaFinalizada='" & ModEtapaF & "',ModExpedienteEFinalizada='" & ModExpedienteF & "',PADiagnostico='" & ADiagnostico & "',PermisoBloqueos='" & ModPermisoBloqueos & "',AgruparFactura='" & ModPermisoAgruparConceptos & "' where codigoUsuario='" & HdUsuarioEdit.Value & "' and codigoEmpresa='" & Session("codigoEmpresa") & "' "
+            clsDatos.cargaComando(strSQL)
+            If clsDatos.ejecutar = 0 Then
+                LblMensajeAviso.Text = "Se realizo el cambio correctamente"
+                PanelAvisos.Visible = True
+                PanelAvisos.Focus()
+                CargarGrdUsuarios()
+
+            Else
+                LblMensajeCritico.Text = clsDatos.MensajeError
+                PanelCritico.Visible = True
+            End If
+
+        End If
+
+
+
+    End Sub
+    Protected Sub BtnGuardarNuevo_Click(sender As Object, e As EventArgs)
+        Dim clsDatos As New ClaseDatos
+        Dim dt As New DataTable
+        Dim strSQL As String
+        Dim rol As String = ""
+        If rol1.Value = 1 Then
+            rol = "RX"
+        End If
+        If rol1.Value = 2 Then
+            rol = "RE"
+        End If
+        If rol1.Value = 3 Then
+            rol = "DR"
+        End If
+        If rol1.Value = 7 Then
+            rol = "ENF"
+        End If
+        strSQL = "insert into [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] (nombre,primerApellido,segundoApellido,especialidad,cedula,login,password,rol,status,codigoEmpresa) " & _
+                    "values('" & txtNombre2.Text.ToUpper & "','" & txtPaterno2.Text.ToUpper & "','" & txtMaterno2.Text.ToUpper & "','" & txtEspecialidad2.Text.ToUpper & "','" & txtCedula2.Text & "','" & txtLogin2.Text & "','" & txtPass2.Text & "','" & rol & "',1," & Session("codigoEmpresa") & " )"
+        clsDatos.cargaComando(strSQL)
+        If clsDatos.ejecutar = 0 Then
+            LblMensajeAviso.Text = "Se agrego el nuevo usuario"
+            PanelAvisos.Visible = True
+            PanelAvisos.Focus()
+            CargarGrdUsuarios()
+        Else
+            LblMensajeCritico.Text = clsDatos.MensajeError
+            PanelCritico.Visible = True
+        End If
+    End Sub
+
+    Protected Sub BtnCancelar_Click(sender As Object, e As EventArgs)
+        Response.Redirect("Agenda.aspx")
+    End Sub
+
+    Private Sub GdUsuarios_RowCommand(sender As Object, e As GridViewCommandEventArgs) Handles GdUsuarios.RowCommand
+        If e.CommandName = "Editar" Then
+            ocultarPaneles()
+            ScriptManager.RegisterClientScriptBlock(Me, Me.GetType(), "none", "<script>$('#Editar_1').modal('show');</script>", False)
+            HdUsuarioEdit.Value = GdUsuarios.Rows(e.CommandArgument).Cells(0).Text
+            bucarDatos(GdUsuarios.Rows(e.CommandArgument).Cells(0).Text)
+        End If
+        If e.CommandName = "Borrar" Then
+            ocultarPaneles()
+            HdUsuarioEdit.Value = GdUsuarios.Rows(e.CommandArgument).Cells(0).Text
+            LblMostarDecision.Text = " ¿Esta seguro(a) que desea borrar el usuario " + GdUsuarios.Rows(e.CommandArgument).Cells(1).Text + "?"
+            PanelDesicion.Visible = True
+            PanelDesicion.Focus()
+            Hdpregunta.Value = "0"
+        End If
+    End Sub
+    Protected Sub BtnSi_Click(sender As Object, e As EventArgs)
+        Select Case Hdpregunta.Value
+            Case "0"
+                Dim strSQL As String
+                Dim clsDatos As New ClaseDatos
+                strSQL = "update [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+                "set status=2 " & _
+                "where codigoUsuario='" & HdUsuarioEdit.Value & "' and codigoEmpresa='" & Session("codigoEmpresa") & "' and status=1"
+                clsDatos.cargaComando(strSQL)
+                If clsDatos.ejecutar = 0 Then
+                    ocultarPaneles()
+                    CargarGrdUsuarios()
+                Else
+                    LblMensajeCritico.Text = clsDatos.MensajeError
+                    PanelCritico.Visible = True
+                End If
+
+        End Select
+    End Sub
+
+    Protected Sub BtnNo_Click(sender As Object, e As EventArgs)
+        ocultarPaneles()
+        Exit Sub
+    End Sub
+    Private Sub ocultarPaneles()
+        PanelAdvertencia.Visible = False
+        PanelAvisos.Visible = False
+        PanelCritico.Visible = False
+        PanelDesicion.Visible = False
+    End Sub
+
+    Protected Sub btnGuardar2_Click(sender As Object, e As EventArgs) Handles btnGuardar2.Click
+        ocultarPaneles()
+        Dim clsDatos As New ClaseDatos
+        Dim dt As New DataTable
+        Dim strSQL, expedienteg, pagosg, EditarPagosg, configuraciong, facturaciong, reportesg, borrarAbonosg, agregarconceptog, borrarconceptog, ModExpedienteFg, ModEtapaFg, MDiagnostico, APermisoBloqueos, APermisoAgruparConceptos As String
+
+        If ChkBoxExpedienteg.Checked = True Then
+            expedienteg = 1
+        Else
+            expedienteg = 0
+        End If
+
+        If ChkBoxConfiguraciong.Checked = True Then
+            configuraciong = 1
+        Else
+            configuraciong = 0
+        End If
+
+        If ChkBoxPagosg.Checked = True Then
+            pagosg = 1
+        Else
+            pagosg = 0
+        End If
+
+        If ChkBoxEditarPagosg.Checked = True Then
+            EditarPagosg = 1
+        Else
+            EditarPagosg = 0
+        End If
+
+        If ChkBoxFacturaciong.Checked = True Then
+            facturaciong = 1
+        Else
+            facturaciong = 0
+        End If
+
+        If ChkBoxReportesg.Checked = True Then
+            reportesg = 1
+        Else
+            reportesg = 0
+        End If
+
+        If ChkBoxBorrarAbonosg.Checked = True Then
+            borrarAbonosg = 1
+        Else
+            borrarAbonosg = 0
+        End If
+
+        If ChkBoxAgregarConceptosg.Checked = True Then
+            agregarconceptog = 1
+        Else
+            agregarconceptog = 0
+        End If
+
+        If ChkBoxBorrarConceptosg.Checked = True Then
+            borrarconceptog = 1
+        Else
+            borrarconceptog = 0
+        End If
+
+
+
+        If efe_1.Checked = True Then
+            ModExpedienteFg = 1
+        Else
+            ModExpedienteFg = 0
+        End If
+
+        If eft_2.Checked = True Then
+            ModEtapaFg = 1
+        Else
+            ModEtapaFg = 0
+        End If
+
+
+        If ChkBoxPDiagnosticoPAlta.Checked = True Then
+            MDiagnostico = 1
+        Else
+            MDiagnostico = 0
+        End If
+
+        'Ab 28/03/2019
+        If ChkBoxPBloqueoAlta.Checked = True Then
+            APermisoBloqueos = 1
+        Else
+            APermisoBloqueos = 0
+        End If
+
+        'Ab 23/04/2019
+        If ChkBoxPAgruparConceptosAlta.Checked = True Then
+            APermisoAgruparConceptos = 1
+        Else
+            APermisoAgruparConceptos = 0
+        End If
+
+
+
+        Dim rol As String = ""
+        If rol2.Value = 1 Then
+            rol = "RX"
+        End If
+        If rol2.Value = 2 Then
+            rol = "RE"
+        End If
+        If rol2.Value = 3 Then
+            rol = "DR"
+        End If
+        If rol2.Value = 4 Then
+            rol = "CX"
+        End If
+        If rol2.Value = 5 Then
+            rol = "AN"
+        End If
+        If rol2.Value = 6 Then
+            rol = "AY"
+        End If
+
+        'validacion de formato de correo
+        Try
+
+            Dim mail As New System.Net.Mail.MailAddress(txtLogin2.Text)
+
+            strSQL = "SELECT codigoUsuario  FROM [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+                     "where login='" & txtLogin2.Text & "' and status=1"
+            If clsDatos.cargatabla(strSQL, dt) = 0 Then
+                If dt.Rows.Count > 0 Then
+                    LblMensajeAdvertencia.Text = "El nombre de usuario ya existe o usuario no valido"
+                    PanelAdvertencia.Visible = True
+                    PanelAdvertencia.Focus()
+                    Exit Sub
+                End If
+            End If
+            strSQL = "insert into [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] (nombre,primerApellido,segundoApellido,especialidad,cedula,login,password,rol,status,codigoEmpresa,firma,email) " & _
+                        "values('" & txtNombre2.Text.ToUpper & "','" & txtPaterno2.Text.ToUpper & "','" & txtMaterno2.Text.ToUpper & "','" & txtEspecialidad2.Text.ToUpper & "','" & txtCedula2.Text & "','" & txtLogin2.Text & "','" & txtPass2.Text & "','" & rol & "',1," & Session("codigoEmpresa") & ",'" & firma_alta.Value & "','" & txtCorreoA.Text & "' )"
+
+            clsDatos.cargaComando(strSQL)
+            If clsDatos.ejecutar = 0 Then
+                LblMensajeAviso.Text = "Se agrego el nuevo usuario correctamente"
+                PanelAvisos.Visible = True
+                PanelAvisos.Focus()
+                CargarGrdUsuarios()
+                limpiarvariables()
+            Else
+                LblMensajeCritico.Text = clsDatos.MensajeError
+                PanelCritico.Visible = True
+            End If
+
+            Dim IUsuario As String = ""
+            strSQL = "select top 1 codigoUsuario from [" & clsDatos.BaseDatos & "].[dbo].[CatUsuarios] " & _
+                             " order by codigoUsuario desc"
+            If clsDatos.cargatabla(strSQL, dt) = 0 Then
+
+                If dt.Rows.Count > 0 Then
+                    IUsuario = dt.Rows(0).Item("codigoUsuario")
+
+                Else
+                    LblMensajeAdvertencia.Text = "Error 1278: " + clsDatos.MensajeError
+                    PanelAdvertencia.Visible = True
+                    PanelAdvertencia.Focus()
+
+                End If
+            End If
+
+
+            strSQL = "insert into [" & clsDatos.BaseDatos & "].[dbo].[AgPermisos] (codigoUsuario, agenda, expediente, facturacion, pagos, EditarPagos, configuracion, reportes, borrarAbonos, otro2,codigoEmpresa, AgregarCPago, EliminarCpago, ModEtapaFinalizada, ModExpedienteEFinalizada,PADiagnostico,PermisoBloqueos,AgruparFactura) " & _
+             "values('" & IUsuario & "',1,'" & expedienteg & "','" & facturaciong & "','" & pagosg & "','" & EditarPagosg & "','" & configuraciong & "','" & reportesg & "','" & borrarAbonosg & "',1," & Session("codigoEmpresa") & ",'" & agregarconceptog & "','" & borrarconceptog & "','" & ModEtapaFg & "','" & ModExpedienteFg & "','" & MDiagnostico & "', '" & APermisoBloqueos & "','" & APermisoAgruparConceptos & "') "
+
+            clsDatos.cargaComando(strSQL)
+            If clsDatos.ejecutar = 0 Then
+                LblMensajeAviso.Text = "Se agrego el nuevo usuario correctamente"
+                PanelAvisos.Visible = True
+                PanelAvisos.Focus()
+                CargarGrdUsuarios()
+                limpiarvariables()
+            Else
+                LblMensajeCritico.Text = clsDatos.MensajeError
+                PanelCritico.Visible = True
+            End If
+        Catch ex As Exception
+
+            LblMensajeAdvertencia.Text = " Formato de correo no valido, ejemplo: usuario@agemed.com.mx"
+            PanelAdvertencia.Visible = True
+            PanelAdvertencia.Focus()
+            Exit Sub
+        End Try
+    End Sub
+    Protected Sub limpiarvariables()
+        txtCedula2.Text = ""
+        txtEspecialidad2.Text = ""
+        txtLogin2.Text = ""
+        txtMaterno2.Text = ""
+        txtNombre2.Text = ""
+        txtPass2.Text = ""
+        txtPaterno2.Text = ""
+        ChkBoxExpedienteg.Checked = True
+        ChkBoxConfiguraciong.Checked = True
+        ChkBoxPagosg.Checked = True
+        ChkBoxFacturaciong.Checked = True
+        ChkBoxReportesg.Checked = True
+        ChkBoxBorrarAbonosg.Checked = True
+        firma_editar.Value = ""
+        txtCorreoA.Text = ""
+
+    End Sub
+End Class

@@ -1,0 +1,411 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="cFacturacion.aspx.vb" Inherits="cFacturacion" EnableEventValidation="false"%>
+
+<%@ Register Assembly="messagebox" Namespace="messagebox" TagPrefix="cc1" %>
+<%@ Register Assembly="CrystalDecisions.Web, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304"
+    Namespace="CrystalDecisions.Web" TagPrefix="CR" %>
+    
+    <%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>:::FISIOCARE::</title>
+    <link href="/aspnet_client/System_Web/2_0_50727/CrystalReportWebFormViewer3/css/default.css"
+        rel="stylesheet" type="text/css" />
+    <link href="/aspnet_client/System_Web/2_0_50727/CrystalReportWebFormViewer3/css/default.css"
+        rel="stylesheet" type="text/css" />
+    </head>
+<body onload="javascript:if(history.length>0)history.go(+1)">
+<center>
+    <form id="form1" runat="server">
+    <div style="width:1000px;border: solid 1px #ff0000; font-family:Arial; font-size:9pt" align="center">
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True" EnableScriptLocalization="True">
+        </asp:ScriptManager>
+        <img src="imagenes/baner2.png" />
+        <table bgcolor="#fc0200" border="0" cellpadding="0" cellspacing="0" width="999">
+            <tr>
+                <td align="left" style="height: 16px">
+                    <asp:LinkButton ID="LinkButton5" runat="server" Font-Bold="False" Font-Italic="False"
+                        ForeColor="White" OnClientClick="cierraventana()" Font-Names="Calibri" Font-Size="16px">| Regresar a Agenda |</asp:LinkButton>
+                </td>
+                <td style="height: 16px">
+                    &nbsp;
+                </td>
+            </tr>
+        </table>
+        <asp:Label ID="lblAdvertencia" runat="server" Font-Bold="False" Font-Names="Calibri"
+            Font-Size="20px" ForeColor="Red" Visible="False" Width="409px"></asp:Label><br />
+        <ajaxToolkit:TabContainer
+            ID="tabOpciones" runat="server" ActiveTabIndex="1" Width="995px" style="text-align: left">
+            
+            <ajaxToolkit:TabPanel ID="TabPanel2" runat="server" HeaderText="TabPanel2">
+                <ContentTemplate>
+        <asp:DropDownList ID="cmbclientes" runat="server" Width="429px">
+        </asp:DropDownList>&nbsp;
+                    <img src="imagenes/page_find.png" /><asp:Button ID="Button1" runat="server" Text="TERAPIAS SIN FAC." Width="123px" Font-Size="9pt" />&nbsp;<img src="imagenes/page_go.png" /><asp:Button ID="btnfacturar" runat="server" Text="FACTURAR" Width="92px" Enabled="False" Font-Size="9pt" />&nbsp;<img src="imagenes/page_white_add.png" /><asp:Button
+                        ID="btnAsigna" runat="server" Enabled="False" Text="ASIGNA FAC." Width="85px" Font-Size="9pt" />
+                    <img src="imagenes/page_excel.png" /><asp:Button
+                        ID="expExcelF" runat="server" Enabled="False" Text="EXPORTA A EXCEL" Width="122px" Font-Size="9pt" /><br />
+                    <br />
+                    <asp:Label ID="lblimportes" runat="server" BackColor="#FFFFC0" Font-Bold="True" Width="692px"></asp:Label><br /><asp:DataGrid AutoGenerateColumns="False" BackColor="White" BorderColor="#DEDFDE" BorderWidth="1px" CellPadding="2" CellSpacing="1" DataKeyField="idabono" ForeColor="Black" GridLines="None" ID="gridFacturas" runat="server" Width="882px">
+                        <AlternatingItemStyle BackColor="Control" />
+                        <Columns>
+                            <asp:BoundColumn DataField="idcita" HeaderText="# Recibo"></asp:BoundColumn>
+                            <asp:BoundColumn DataField="elnombre" HeaderText="CLIENTE"></asp:BoundColumn>
+                            <asp:BoundColumn DataField="descripcion" HeaderText="TERAPIA"></asp:BoundColumn>
+                            <asp:BoundColumn DataField="fecha" HeaderText="FECHA"></asp:BoundColumn>
+                            <asp:BoundColumn DataField="abono" DataFormatString="{0:C}" HeaderText="ABONOS">
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+</asp:BoundColumn>
+                            <asp:BoundColumn DataField="importe" DataFormatString="{0:C}" HeaderText="IMPORTES">
+<ItemStyle HorizontalAlign="Center"></ItemStyle>
+</asp:BoundColumn>
+                            <asp:TemplateColumn Visible="False"><ItemTemplate>
+                                    <asp:CheckBox ID="CheckBox1" runat="server"  />
+                                
+</ItemTemplate>
+</asp:TemplateColumn>
+                            <asp:BoundColumn DataField="idcliente" Visible="False"></asp:BoundColumn>
+                            <asp:TemplateColumn HeaderText="CoAseguro"><ItemTemplate>
+                                    <asp:CheckBox ID="CheckBox2" Checked='<%# Bind("coaseguro") %>' Enabled="false" runat="server"  />
+                                
+</ItemTemplate>
+
+<HeaderStyle HorizontalAlign="Center" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False"></HeaderStyle>
+
+<ItemStyle HorizontalAlign="Center" Font-Bold="False" Font-Italic="False" Font-Overline="False" Font-Strikeout="False" Font-Underline="False"></ItemStyle>
+</asp:TemplateColumn>
+                        </Columns>
+                        <FooterStyle BackColor="Tan" />
+                        <HeaderStyle BackColor="#FC0200" Font-Bold="False" ForeColor="White" />
+                        <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                        <SelectedItemStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                    </asp:DataGrid>
+                    
+                </ContentTemplate>
+                <HeaderTemplate>
+                    TERAPIAS PARA FACTURAR
+                </HeaderTemplate>
+            </ajaxToolkit:TabPanel>
+            <ajaxToolkit:TabPanel ID="TabPanel3" runat="server" HeaderText="TabPanel3">
+                <ContentTemplate><asp:DropDownList ID="cmbMesFac" runat="server" Style="font-size: 9pt;
+                                    font-family: Arial">
+                    <asp:ListItem Value="0">TODOS LOS MESES</asp:ListItem>
+                    <asp:ListItem Value="1">ENERO</asp:ListItem>
+                    <asp:ListItem Value="2">FEBRERO</asp:ListItem>
+                    <asp:ListItem Value="3">MARZO</asp:ListItem>
+                    <asp:ListItem Value="4">ABRIL</asp:ListItem>
+                    <asp:ListItem Value="5">MAYO</asp:ListItem>
+                    <asp:ListItem Value="6">JUNIO</asp:ListItem>
+                    <asp:ListItem Value="7">JULIO</asp:ListItem>
+                    <asp:ListItem Value="8">AGOSTO</asp:ListItem>
+                    <asp:ListItem Value="9">SEPTIEMBRE</asp:ListItem>
+                    <asp:ListItem Value="10">OCTUBRE</asp:ListItem>
+                    <asp:ListItem Value="11">NOVIEMBRE</asp:ListItem>
+                    <asp:ListItem Value="12">DICIEMBRE</asp:ListItem>
+                </asp:DropDownList>
+                    &nbsp;<asp:DropDownList ID="cmblosaños" runat="server">
+                        <asp:ListItem>2009</asp:ListItem>
+                        <asp:ListItem>2010</asp:ListItem>
+                        <asp:ListItem>2011</asp:ListItem>
+                        <asp:ListItem>2012</asp:ListItem>
+                        <asp:ListItem>2013</asp:ListItem>
+                        <asp:ListItem>2014</asp:ListItem>
+                    </asp:DropDownList>
+                    &nbsp;&nbsp;&nbsp;
+                    <img src="imagenes/page_add.png" /><asp:Button ID="btnfacgeneradas" runat="server" Text="FAC. GENERADAS" Width="120px" Font-Bold="False" Font-Size="9pt" ForeColor="Red" />
+                    &nbsp;&nbsp;<img src="imagenes/page_delete.png" /><asp:Button ID="btncancelar" runat="server" Text="FAC. CANCELADAS" Width="120px" Font-Bold="False" Font-Size="9pt" ForeColor="Red" />
+                    <img src="imagenes/page_excel.png" /><asp:Button ID="btnexpExcel" runat="server" Enabled="False" Text="EXPORTA A EXCEL"
+                        Width="122px" Font-Bold="False" Font-Size="9pt" ForeColor="Red" />
+                    <br />
+                    <br />
+                    <asp:Label ID="lblindicaciones" runat="server" BackColor="Red" Font-Bold="True" Font-Size="12pt"
+                        ForeColor="White" Style="text-align: center" Width="822px"></asp:Label>
+                    <asp:DataGrid ID="gridFacturasimP" runat="server" BackColor="White" BorderColor="#DEDFDE"
+            BorderWidth="1px" CellPadding="2" CellSpacing="1" ForeColor="Black"
+            GridLines="None" Width="825px" AutoGenerateColumns="False">
+                        <AlternatingItemStyle BackColor="Control" />
+                        <Columns>
+                            <asp:BoundColumn DataField="num_factura" HeaderText="FACTURA"></asp:BoundColumn>
+                            <asp:BoundColumn DataField="fecha" HeaderText="FECHA"></asp:BoundColumn>
+                            <asp:BoundColumn DataField="nombre" HeaderText="CLIENTE"></asp:BoundColumn>
+                            <asp:BoundColumn DataField="importe" HeaderText="IMPORTE" DataFormatString="{0:C}"></asp:BoundColumn>
+                            <asp:TemplateColumn>
+                                <ItemTemplate>
+                                    <img src="imagenes/cancel.png" /><asp:LinkButton ID="lnkcancelar" runat="server" CommandName="cancelar" ForeColor="Red" Font-Size="9pt">Cancelar Fac.</asp:LinkButton>
+                                </ItemTemplate>
+                            </asp:TemplateColumn>
+                            <asp:TemplateColumn>
+                                <ItemTemplate>
+                                    <asp:ImageButton ID="ImageButton1" runat="server" CommandName="imprmir" Height="20px"
+                                        ImageUrl="~/imagenes/agt_print.png" Width="22px" />
+                                </ItemTemplate>
+                            </asp:TemplateColumn>
+                            <asp:BoundColumn DataField="sustituidoX" HeaderText="SUSTITUIDO POR" Visible="False">
+                            </asp:BoundColumn>
+                        </Columns>
+                        <FooterStyle BackColor="Tan" />
+                        <HeaderStyle BackColor="#FC0200" Font-Bold="False" ForeColor="White" />
+                        <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                        <SelectedItemStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                    </asp:DataGrid>
+                </ContentTemplate>
+                <HeaderTemplate>
+                    FACTURAS
+                </HeaderTemplate>
+            </ajaxToolkit:TabPanel>
+        </ajaxToolkit:TabContainer>
+                <div id="lafactura" runat="server" visible="false">
+                    <table border="0" cellpadding="0" cellspacing="2" style="font-size: 10pt; font-family:calibri "
+                        width="770">
+                        <tr>
+                            <td align="right" colspan="5" style="height: 22px">
+                                &nbsp;MERIDA,YUCATAN,MEX.,A
+                                <asp:TextBox ID="ftxtdia" runat="server" Font-Size="8pt" Width="50px"></asp:TextBox>
+                                DE&nbsp;<asp:DropDownList ID="cmbmes" runat="server" Style="font-size: 9pt;
+                                    font-family: Arial">
+                                    <asp:ListItem Value="01">ENERO</asp:ListItem>
+                                    <asp:ListItem Value="02">FEBRERO</asp:ListItem>
+                                    <asp:ListItem Value="03">MARZO</asp:ListItem>
+                                    <asp:ListItem Value="04">ABRIL</asp:ListItem>
+                                    <asp:ListItem Value="05">MAYO</asp:ListItem>
+                                    <asp:ListItem Value="06">JUNIO</asp:ListItem>
+                                    <asp:ListItem Value="07">JULIO</asp:ListItem>
+                                    <asp:ListItem Value="08">AGOSTO</asp:ListItem>
+                                    <asp:ListItem Value="09">SEPTIEMBRE</asp:ListItem>
+                                    <asp:ListItem Value="10">OCTUBRE</asp:ListItem>
+                                    <asp:ListItem Value="11">NOVIEMBRE</asp:ListItem>
+                                    <asp:ListItem Value="12">DICIEMBRE</asp:ListItem>
+                                </asp:DropDownList>
+                                DE<asp:DropDownList ID="cmbaño" runat="server">
+                                    <asp:ListItem>2009</asp:ListItem>
+                                    <asp:ListItem>2010</asp:ListItem>
+                                    <asp:ListItem>2011</asp:ListItem>
+                                    <asp:ListItem>2012</asp:ListItem>
+                                    <asp:ListItem>2013</asp:ListItem>
+                                    <asp:ListItem>2014</asp:ListItem>
+                                    <asp:ListItem>2015</asp:ListItem>
+                                    <asp:ListItem>2016</asp:ListItem>
+                                    <asp:ListItem>2017</asp:ListItem>
+                                </asp:DropDownList>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#f4f4f4; color:White; color:#1A3773; text-align:left">
+                                NO.</td>
+                            <td colspan="4" align="left">
+                                <asp:TextBox ID="txtNfac" runat="server" Width="43px" Enabled="False"></asp:TextBox>
+                                <asp:TextBox ID="txtNserie" runat="server" ReadOnly="True" Width="31px"></asp:TextBox></td>
+                        </tr>
+                        <tr>
+                            <td style="background-color:#f4f4f4; color:#1A3773; text-align:left; width:100px">
+                                NOMBRE</td>
+                            <td colspan="4" style="font-weight: bold; color: #ffffff" align="left">
+                                <asp:TextBox ID="ftxtnombre" runat="server" Font-Size="8pt" Width="653px" Enabled="False"></asp:TextBox>
+                                <asp:Button ID="btnCatalogo" runat="server" Height="21px" Text="..." Width="41px" /><asp:DropDownList
+                                    ID="cmbcliefac" runat="server" AutoPostBack="True" Visible="False" Width="660px">
+                                </asp:DropDownList>
+                                <asp:Button ID="btnCambiadatos" runat="server" Height="21px" Text="<-->" Width="41px" Visible="False" /></td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fc0200" style="background-color:#f4f4f4; color:White; color:#1A3773; text-align:left">
+                               DOMICILIO</td>
+                            <td colspan="4" style="font-weight: bold; color: #ffffff" align="left">
+                                <asp:TextBox ID="ftxtdomicilio" runat="server" Font-Size="7pt" Width="700px" Height="16px" Enabled="False"></asp:TextBox>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td bgcolor="#fc0200" style="background-color:#f4f4f4; color:White; color:#1A3773; text-align:left">
+                                LOCALIDAD</td>
+                            <td width="173" align="left">
+                                <asp:TextBox ID="ftxtciudad" runat="server" Font-Size="8pt" Enabled="False">MERIDA, YUC.</asp:TextBox>
+                            </td>
+                            <td style="width: 28px; background-color:#f4f4f4; color:#1A3773; text-align:left" align="right">
+                                RFC</td>
+                            <td width="354" align="left">
+                                <asp:TextBox ID="ftxtrfc" runat="server" Font-Size="8pt" Width="125px" Enabled="False"></asp:TextBox>
+                            </td>
+                            <td width="110">
+                                &nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" colspan="5">
+                            <div style="font-size:9pt">
+                                <asp:DataGrid ID="gridDetalles" runat="server" AutoGenerateColumns="False" BackColor="White"
+                                    BorderColor="#DEDFDE" BorderWidth="1px" CellPadding="2" CellSpacing="1" DataKeyField="idcosto"
+                                    ForeColor="Black" GridLines="None" Width="800px" Font-Names="Calibri" Font-Size="14px">
+                                    <AlternatingItemStyle BackColor="Control" />
+                                    <Columns>
+                                        <asp:TemplateColumn HeaderText="Cantidad">
+                                            <ItemTemplate>
+                                                <asp:TextBox ID="TextBox1" Text='<%# Bind("cantidad") %>' runat="server" Width="61px" style="text-align: center" AutoPostBack="True" OnTextChanged="TextBox1_TextChanged" Font-Names="Calibri" Font-Size="14px"></asp:TextBox>
+                                                <ajaxToolkit:FilteredTextBoxExtender ID="FilteredTextBoxExtender1" runat="server"
+                                                    FilterType="Numbers" TargetControlID="TextBox1">
+                                                </ajaxToolkit:FilteredTextBoxExtender>
+                                            </ItemTemplate>
+                                        </asp:TemplateColumn>
+                                        <asp:TemplateColumn HeaderText="Descripcion">
+                                            <ItemTemplate>
+                                                <asp:TextBox ID="TextBox2" Text='<%# Bind("descripcion") %>' runat="server" Width="400px" style="text-align: center" Font-Names="Calibri" Font-Size="14px" ></asp:TextBox>
+                                        </ItemTemplate>
+                                        </asp:TemplateColumn>
+                                        <asp:TemplateColumn HeaderText="Importe">
+                                            <ItemTemplate>
+                                                <asp:TextBox ID="TextBox3" Text='<%# Bind("importe") %>' runat="server" Width="61px" style="text-align: center" AutoPostBack="True" OnTextChanged="TextBox3_TextChanged" Font-Names="Calibri" Font-Size="14px"></asp:TextBox>
+                                                <ajaxToolkit:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server" TargetControlID="TextBox3" ValidChars="1234567890,.">
+                                                </ajaxToolkit:FilteredTextBoxExtender>
+                                            </ItemTemplate>
+                                        </asp:TemplateColumn>
+                                        <asp:BoundColumn DataField="elnombre" Visible="False"></asp:BoundColumn>
+                                        <asp:BoundColumn DataField="domicilio" Visible="False"></asp:BoundColumn>
+                                        <asp:BoundColumn DataField="importe" HeaderText="auximporte" Visible="False"></asp:BoundColumn>
+                                        <asp:BoundColumn DataField="idcliente" Visible="False"></asp:BoundColumn>
+                                    </Columns>
+                                    <FooterStyle BackColor="Tan" />
+                                    <HeaderStyle BackColor="#FC0200" Font-Bold="False" ForeColor="White" />
+                                    <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+                                    <SelectedItemStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+                                        <EditItemStyle Font-Names="9pt" />
+                                </asp:DataGrid>
+                            </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align:left" align="left" colspan="5">
+                                <table border="0" cellpadding="0" cellspacing="3" style="width: 100%;">
+                                    <tr>
+                                        <td>
+                                            Cantidad en letras
+                                <asp:TextBox ID="ftxtletras" runat="server" Font-Size="8pt" ReadOnly="True" Width="458px"></asp:TextBox></td>
+                                        <td style="text-align:left; width: 66px; background-color:#f4f4f4; color:White; color:#1A3773;">
+                                IMPORTE</td>
+                                        <td style="text-align:right">
+                                <asp:TextBox ID="ftxtimporte" runat="server" ReadOnly="True" Width="70px">0</asp:TextBox></td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2">
+                                </td>
+                                        <td style="text-align:left; width: 66px; background-color:#f4f4f4; color:White; color:#1A3773;">
+                                I.V.A 16%</td>
+                                        <td style="text-align:right">
+                                <asp:TextBox ID="ftxtiva" runat="server" ReadOnly="True" Width="70px">0</asp:TextBox></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="text-align:left; width: 66px; background-color:#f4f4f4; color:White; color:#1A3773;">
+                                TOTAL</td>
+                                        <td style="text-align:right">
+                                <asp:TextBox ID="ftxttotal" runat="server" Width="70px" ReadOnly="True"></asp:TextBox></td>
+                                    </tr>
+                                </table>
+                                <hr />
+                                <table border="0" cellpadding="0" cellspacing="3" style="width: 770px;">
+                                    <tr>
+                                        <td style="background-color:#f4f4f4; color:White; color:#1A3773; width: 137px;">
+                                PACIENTE</td>
+                                        <td>
+                                        <asp:TextBox ID="txtpaciente" runat="server" Font-Size="9pt" Width="570px"></asp:TextBox></td>
+                                    </tr>
+                                    <tr>
+                                        <td style="background-color:#f4f4f4; color:White; color:#1A3773; width: 137px;">
+                                            OBSERVACION</td>
+                                        <td>
+                                            <asp:TextBox ID="TXTmiobserva" runat="server" Font-Size="9pt" Width="570px" MaxLength="254"></asp:TextBox><asp:CheckBox
+                                                ID="chkImp" runat="server" Text="Imp." /></td>
+                                    </tr>
+                                </table>
+                    <table border="0" cellpadding="0" cellspacing="0" style="width: 770px">
+                        <tr>
+                            <td style=" text-align:left; width: 450px; height: 139px;" align="left">
+                                            <table border="0" cellpadding="0" cellspacing="3" style="width: 450px">
+                                                <tr>
+                                                    <td style="background-color:#f4f4f4; color:White; color:#1A3773; width: 137px;">
+                                                        FORMA DE PAGO</td>
+                                                    <td>
+                                <asp:DropDownList ID="cmbFormaPago" runat="server" Width="182px">
+                                </asp:DropDownList></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 137px; color: #1a3773; background-color: #f4f4f4">
+                                                        NUMERO DE CUETNA</td>
+                                                    <td>
+                                <asp:TextBox ID="txtnumcuenta" runat="server" Width="85px"></asp:TextBox></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="width: 137px; color: #1a3773; background-color: #f4f4f4">
+                                                        EMAL<asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server"
+                                                            ControlToValidate="txtmail" ErrorMessage="correo invalido" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"
+                                                            ValidationGroup="vCorreo"></asp:RegularExpressionValidator></td>
+                                                    <td>
+                                                        <asp:TextBox ID="txtmail" runat="server" Width="270px"></asp:TextBox><asp:CheckBox
+                                                            ID="chkMail" runat="server" ValidationGroup="vCorreo" />&nbsp;</td>
+                                                </tr>
+                                            </table><br />
+                                <asp:Button ID="btnFimp" runat="server" Font-Bold="True" ForeColor="Red" OnClientClick="javascript:this.disabled=true;"
+                                    Text="Imprimir y Act." UseSubmitBehavior="False" Width="97px" Visible="False" Font-Size="9pt" />
+                            <asp:CheckBox
+                                                ID="chkdetalle" runat="server" Text="Facturar a Detalle" Font-Italic="False" Visible="False" />
+                                <asp:CheckBox ID="chkpagar" runat="server" Font-Size="9pt" Text="Por pagar" Width="100px" Visible="False" /></td>
+                            <td colspan="3" align="right" style="width: 320px; height: 139px;">
+                                &nbsp;<br />
+        <asp:Button ID="btnFreg" runat="server" Font-Bold="False" ForeColor="Red" OnClientClick="javascript:this.disabled=true;"
+                                    Text="Regresar a Buscar" UseSubmitBehavior="False" Width="117px" Font-Size="12px" Font-Names="Calibri" />
+                                &nbsp;&nbsp;&nbsp;
+                                <asp:Button ID="btnFguardar" runat="server" Font-Bold="False" ForeColor="Red" OnClientClick="javascript:this.disabled=true;"
+                                    Text="Imprimir y Guardar" UseSubmitBehavior="False" Width="121px" Font-Size="12px" Font-Names="Calibri" ValidationGroup="vCorreo" />
+                                </td>
+                        </tr>
+                    </table>
+                            </td>
+                        </tr>
+                    </table>
+                    </div>
+        <cc1:messagebox ID="Messagebox1" runat="server" />
+        <asp:Label ID="lblCondiciones" runat="server" Visible="False"></asp:Label>
+        <asp:Label ID="lblfechacita" runat="server" Text="Label" Visible="False"></asp:Label>
+        <asp:Label ID="lblauxfac" runat="server" Visible="False"></asp:Label>
+        <asp:Label ID="lbltempclie" runat="server" Visible="False"></asp:Label>
+        <asp:Label ID="lblrecibos" runat="server" Visible="False"></asp:Label><br />
+        <asp:Panel ID="pnlasigna" runat="server" Height="66px" Visible="False" Width="557px">
+            <table border="0" cellpadding="0" cellspacing="3" style="width: 50%">
+                <tr>
+                    <td style="width: 129px; background-color: #f4f4f4; text-align: right">
+            <asp:Label ID="Label1" runat="server" Text="NUMERO DE FACTURA" ForeColor="#1A3773"></asp:Label></td>
+                    <td style="width: 100px; text-align: left">
+            <asp:TextBox ID="txtAfac" runat="server" Width="53px" style="text-align: center"></asp:TextBox><asp:TextBox ID="txtAserie" runat="server" ReadOnly="True" Width="29px"></asp:TextBox></td>
+                </tr>
+            </table>
+            &nbsp; &nbsp;
+            <br />
+            <ajaxToolkit:FilteredTextBoxExtender ID="FilteredTextBoxExtender2" runat="server"
+                FilterType="Numbers" TargetControlID="txtAfac">
+            </ajaxToolkit:FilteredTextBoxExtender>
+        <input type="hidden" id="sumimportes" runat="server" />
+            &nbsp;
+            <br />
+            <img src="imagenes/bullet_disk.png" /><asp:Button ID="Button2" runat="server" ForeColor="Red" Text="Grabar" Font-Size="9pt" />
+            <img src="imagenes/cancel.png" /><asp:Button ID="Button4" runat="server" ForeColor="Red" Text="Cancelar" Width="68px" Font-Size="9pt" /></asp:Panel>
+        <asp:Panel ID="pnlcancela" runat="server" Width="557px" Visible="False">
+            <asp:Label ID="Label2" runat="server" Text="SUSTITUIDAD POR : "></asp:Label>
+            <asp:TextBox ID="txtsustituye" runat="server" MaxLength="75" Width="287px"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtsustituye"
+                ErrorMessage="*" ValidationGroup="cancel"></asp:RequiredFieldValidator><br />
+            <br />
+            <img src="imagenes/bullet_disk.png" /><asp:Button ID="Button3" runat="server" ForeColor="Red" Text="Grabar Cancelacion" Font-Size="9pt" Width="121px" ValidationGroup="cancel" />
+            <img src="imagenes/cancel.png" /><asp:Button ID="Button5" runat="server" ForeColor="Red" Text="Cancelar" Width="68px" Font-Size="9pt" /></asp:Panel>
+        <CR:CrystalReportSource ID="origen_reporte" runat="server">
+        </CR:CrystalReportSource>
+        <input id="hfModFac" type="hidden" runat="server" style="width: 1px" />
+        <input id="hfValFacturar" style="width: 1px" type="hidden" runat="server" />
+        <input id="hfidDatosFac" runat="server" style="width: 1px" type="hidden" />
+        <ajaxToolkit:FilteredTextBoxExtender ID="FilteredTextBoxExtender3" runat="server"
+            FilterType="Numbers" TargetControlID="txtNfac">
+        </ajaxToolkit:FilteredTextBoxExtender>
+        &nbsp;
+        &nbsp;&nbsp; &nbsp; &nbsp;
+        <CR:CrystalReportViewer ID="visor_reporte" runat="server" AutoDataBind="true" />
+        </div>
+    
+    </form></center>
+</body>
+</html>

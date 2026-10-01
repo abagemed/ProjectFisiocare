@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Acuse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" RfcEmisor="OST141127IEA" Fecha="2017-08-09T16:44:14.9176213">
+  <Folios xmlns="http://cancelacfd.sat.gob.mx">
+    <UUID>847B4B4D-2C57-4653-A602-F56BCCE56B8B</UUID>
+    <EstatusUUID>201</EstatusUUID>
+  </Folios>
+  <Signature Id="SelloSAT" xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#hmac-sha512" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/TR/1999/REC-xpath-19991116">
+            <XPath>not(ancestor-or-self::*[local-name()='Signature'])</XPath>
+          </Transform>
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512" />
+        <DigestValue>SCrbjJ28s7MzS9kcAam9u2r4VLsta7/y6Wfd6BBoB2VJYST8duMGntpskNRBw2o/A66jEl5XtHU5ux6xoov2RA==</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>afvwfB9IEGysvBCvjTeAJR3xudnANA5liJURftsUczlHZQH1S2p5UcCSKBxmdvI2GDtC1hrIjzihGnmMKJNIVw==</SignatureValue>
+    <KeyInfo>
+      <KeyName>00001088888800000016</KeyName>
+      <KeyValue>
+        <RSAKeyValue>
+          <Modulus>xnL2zDPtH5jDsAZDTIfMqbKGrve+At8Kyx2EZvbfXbpK9uVExWS874oMelFzNq69/YqSReT3I7I8wr+joy5O7ouZH+4KWdIGp4Si6lHe0kntxzNmuuKyOPkJ9tMcntnFmQ4bfxFxlg/Ud2hCtuoy3j2xYkIXu5O4pGM98Nz8pAM=</Modulus>
+          <Exponent>AQAB</Exponent>
+        </RSAKeyValue>
+      </KeyValue>
+    </KeyInfo>
+  </Signature>
+</Acuse>

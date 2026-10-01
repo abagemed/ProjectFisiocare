@@ -1,0 +1,9 @@
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\bin\plantillas2.dll.config
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\bin\plantillas2.dll
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\bin\plantillas2.pdb
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\bin\plantillas2.xml
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\obj\Debug\plantillas2.Resources.resources
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\obj\Debug\plantillas2.vbproj.GenerateResource.Cache
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\obj\Debug\plantillas2.dll
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\obj\Debug\plantillas2.xml
+c:\users\valde\onedrive\documentos\visual studio 2013\Projects\plantillas2\plantillas2\obj\Debug\plantillas2.pdb

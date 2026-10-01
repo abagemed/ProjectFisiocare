@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="FP" Folio="10549" Fecha="2017-12-28T10:01:00" Sello="bCNVffIAC/JovH8yLM+F1+McyWhHgbR0JLBIiYyocVe/a4TRKWxEvvuwRylLp2Uu1Q03449CASDfTSJv44ky7wPa4D9ZYwJ8jX4N6OH5V1QfGYoY9CVbr+AweAlzJ2pJpl84sT3/w92Z6CdMDMTreoVgsm1eRcpty7D6WvF6cA0=" FormaPago="01" NoCertificado="00001000000305745366" Certificado="MIIEYzCCA0ugAwIBAgIUMDAwMDEwMDAwMDAzMDU3NDUzNjYwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xNDEyMjIxOTMwNDVaFw0xODEyMjIxOTMwNDVaMIGvMRswGQYDVQQDExJPUlRPUEVESUEgU1RBUiBTQ1AxGzAZBgNVBCkTEk9SVE9QRURJQSBTVEFSIFNDUDEbMBkGA1UEChMST1JUT1BFRElBIFNUQVIgU0NQMSUwIwYDVQQtExxPU1QxNDExMjdJRUEgLyBSSUNIODAxMTEwQVEwMR4wHAYDVQQFExUgLyBSSUNIODAxMTEwSFlOVk1SMDcxDzANBgNVBAsTBk1hdHJpejCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvk79P3wwPi3yPgrQu9WGpQgAdPzIBZXbX67ZvvGr2AfTPqKagNk/KkMSViy2sz3xFsvZ1LHVjuesY/1cV+/5hPIArTkg5hODSfZARLRyydLkHn00na75FjDseTMMG6Xu00VYP1kIt0Q13EJAsDu7+a90EiE8VQpH5qnPK1FbLLkCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAJnhAN1znUS0t4BtBkuXdV7wzazM3i+agfd7dW22MYTkb4ecVRwc3h3HEfUcEzhtSiNJHDZSeUtjSPkfw5cXOytFjW262uKSjH1bhB8DnhObiroh49ERO66BQQ/wckf1CDnmBYIeKy/y+gdDD1kDOuZqkdjbOLAZz5wgw7FLN+GgiLJOEQ0IlcRzCLehsp4O/GmWH4Eqq5CZdGnxUWSb6ZY3pv43JninaOnvyKtKM/1V3h6da5qIWUrfEAxy/92bdZAeldf4EfxLK2m3fS7Z413TZ+6fdRGnRX4MVyvUGTJ9NLJNWQm2zliIUfUpy/dyhztBACyJxSYvDKrjTOuj/a0=" SubTotal="20.00" Moneda="MXN" Total="21.60" TipoDeComprobante="I" MetodoPago="PUE" LugarExpedicion="97133" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor Rfc="OST141127IEA" Nombre="ORTOPEDIA STAR, S.C.P." RegimenFiscal="601" />
+  <cfdi:Receptor Rfc="XAXX010101000" Nombre="Publico en General" UsoCFDI="P01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="85121612" NoIdentificacion="noIdentificacion" Cantidad="1" ClaveUnidad="E48" Unidad="Unidad de Servicio" Descripcion="CONSULTA MÉDICA" ValorUnitario="10.00" Importe="10.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="85121808" NoIdentificacion="noIdentificacion" Cantidad="1" ClaveUnidad="E48" Unidad="Unidad de Servicio" Descripcion="SERVICIOS DE LABORATORIOS DE RAYOS X" ValorUnitario="10.00" Importe="10.00">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="10.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1.60" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="1.60">
+    <cfdi:Traslados>
+      <cfdi:Traslado Importe="0.00" TipoFactor="Tasa" TasaOCuota="0.000000" Impuesto="002" />
+      <cfdi:Traslado Importe="1.60" TipoFactor="Tasa" TasaOCuota="0.160000" Impuesto="002" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" RfcProvCertif="FLI081010EK2" UUID="D018380B-10FF-4A97-87DC-4F185203923E" FechaTimbrado="2017-12-28T10:02:34" SelloCFD="bCNVffIAC/JovH8yLM+F1+McyWhHgbR0JLBIiYyocVe/a4TRKWxEvvuwRylLp2Uu1Q03449CASDfTSJv44ky7wPa4D9ZYwJ8jX4N6OH5V1QfGYoY9CVbr+AweAlzJ2pJpl84sT3/w92Z6CdMDMTreoVgsm1eRcpty7D6WvF6cA0=" NoCertificadoSAT="00001000000403498740" SelloSAT="H0GGWWfIwOlK2k1FOZxWPEJsU0Xfi8qz41EQLz/5zijNAMPv+tfH1CExaRDvdXL/dQDWjK+9HuQcHrVcFocGlU5uWprAq3ctOY+2HPaX2wPIaMtyzkbA6c84DE03MhXuF0aA5ea3aoNpVxDj8o3mNS/KWys/pW6iVngZyPPjddlB1VcymurTWiEkCA9ML2kZRKy42ZYsNLs2qYzBPxEXpTWEhlggtUKC1MTILv5jYwuzytedZlS2gJnV+fS5BT0aTkoeAP/FiLrTe/M8GeERSP/UyV/FrCFYtVyAhSjD1vkKPUNXIafaYBXZyOd9d16bw6AknMIQ0+mP7WCi2wRTPA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/sitio_internet/cfd/TimbreFiscalDigital/TimbreFiscalDigitalv11.xsd" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>
