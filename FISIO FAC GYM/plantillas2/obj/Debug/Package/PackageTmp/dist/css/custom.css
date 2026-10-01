@@ -1,0 +1,143 @@
+.modal.modal-wide .modal-dialog {
+  width: 70%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+  text-align:justify;
+  text-indent:30px;
+}
+.modal-wide ol{
+	padding-left:80px;
+}
+
+.modal-wide ol li{
+	margin-top:10px;
+}
+
+/*Eliminar focus*/
+a:focus {
+  outline: none;
+}
+button[type=button]:focus, button[type=submit]:focus, button[type=reset]:focus {
+  outline: none;
+}
+
+.modal-content, input, select, textarea, span, a, button, ul, code, pre, li, .alert{
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    border-radius: 0 !important;
+}
+
+.example-modal .modal-1 {
+                    position: relative;
+                    top: auto;
+                    bottom: auto;
+                    right: auto;
+                    left: auto;
+                    display: block;
+                    z-index: 1;
+                }
+
+                .modalBackground
+                {
+                    background-color:rgba(0,0,0,0.3);
+                }
+
+                .txtAgFecha, .input-group-addon {
+                    cursor: pointer;
+                }
+
+                .datepicker.dropdown-menu {
+                    z-index: 9999;
+   
+                }
+
+
+.mensaje-error {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #a94442;
+}
+
+.has-error .input-group-addon {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #a94442;
+}
+
+.preloader{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background-color:rgba(0,0,0,0.7);
+    z-index:9999;
+    position:fixed;
+}
+
+.status{
+    width:50px;
+    height:50px;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin:-50px 0 0 -50px;
+    color:#fff;
+}
+
+button.dt-button, div.dt-button, a.dt-button {
+     margin-right: 0.333em;
+}
+
+button.dt-button:hover:not(.disabled), div.dt-button:hover:not(.disabled), a.dt-button:hover:not(.disabled) {
+    margin-right: 0.333em;
+}
+ 
+/*.select2, .select2-container, .select2-container--default, .select2-selection--single, .select2-selection__rendered, .select2-container--above, .select2-container--focus{
+    color: #444;
+    line-height:normal;
+    width:100% !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 24px;
+}
+    */
+.btn-lg, .btn-md, .btn-sm, .btn-xs{
+white-space:normal !important;
+}
+.headrow{
+white-space:normal !important;
+}
+.itemGrid{
+    padding:0px !important;
+}
+.text-red{
+    color:red;
+}
+
+ .box-header{
+            cursor:pointer
+}
+
+ .box-title.fa-plus:before { 
+     content: none !important;
+}
+ .box-title.fa-minus:before { 
+     content: none !important;
+}
+
+
+ .btn-finalizado {
+    color: #fff;
+    background-color: #909090;
+    border-color: #656565;
+}
+
+ .btn-finalizado:hover, .btn-finalizado:active{
+    color: #fff;
+    background-color: #5d5d5d;
+    border-color: #656565;
+}

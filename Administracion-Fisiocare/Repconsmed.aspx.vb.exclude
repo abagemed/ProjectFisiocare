@@ -1,0 +1,103 @@
+﻿
+Partial Class Repconsmed
+
+    Inherits System.Web.UI.Page
+    Dim funciones As New miclases
+    Protected Sub Button1_Click(ByVal condicion As String, ByVal sender As Object, ByVal e As System.EventArgs) Handles Button1.Click
+        'Sub llenagrid(ByVal condicion As String)
+        gridDatos = funciones.LLenaGrid("SELECT clientes.elnombre, convert(varchar(10),abonos.fecha,103) as fecha, catServicios.descripcion, " & _
+            "abonos.abono, abonos.importe - abonos.monto as importe,abonos.idabono, abonos.fecha as fecha2,idcita,num_factura FROM  abonos INNER JOIN clientes ON abonos.idCliente = clientes.idCliente " & _
+            "INNER JOIN catCostos ON abonos.idCosto = catCostos.idCosto INNER JOIN  catServicios ON " & _
+            "catServicios.id_servicio = catCostos.id_servicio where abonos.idcliente='" + cmbcliente.SelectedValue.Trim + "' " & _
+            " " + condicion + " order by fecha2 desc", gridDatos)
+    End Sub
+    Protected Sub Page_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
+        If Not Page.IsPostBack Then
+            lblfechacita.Text = Context.Items("fecha").ToString.Trim
+            cmbcliente = funciones.llenacombos(cmbcliente, "select idcliente,elnombre from clientes order by elnombre")
+        End If
+    End Sub
+
+    Protected Sub cmbcliente_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles cmbcliente.SelectedIndexChanged
+        porAbonos()
+        totales()
+        If gridDatos.Items.Count > 0 Then
+            dDatos.Visible = True
+        Else
+            dDatos.Visible = False
+        End If
+        lblnombre.Text = cmbcliente.Items(cmbcliente.SelectedIndex).Text.Trim
+    End Sub
+    Protected Sub OPCIONES_SelectedIndexChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles OPCIONES.SelectedIndexChanged
+        Select Case OPCIONES.SelectedValue.Trim
+            Case 0
+                porAbonos()
+            Case 1
+                porFactura()
+        End Select
+    End Sub
+
+    Protected Sub LinkButton5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles LinkButton5.Click
+        Context.Items.Add("fecha", lblfechacita.Text.Trim)
+        Server.Transfer("default.aspx", False)
+    End Sub
+    Sub porAbonos()
+        gridDatos.Columns(3).Visible = True
+        gridDatos.Columns(7).Visible = False
+        gridDatos = funciones.creadataset("SELECT clientes.elnombre, convert(varchar(10),abonos.fecha,103) as fecha, catServicios.descripcion, " & _
+        "abonos.abono, abonos.importe - abonos.monto as importe,abonos.idabono, abonos.fecha as fecha2,idcita,num_factura, 0 as importefac FROM  abonos INNER JOIN clientes ON abonos.idCliente = clientes.idCliente " & _
+        "INNER JOIN catCostos ON abonos.idCosto = catCostos.idCosto INNER JOIN  catServicios ON " & _
+        "catServicios.id_servicio = catCostos.id_servicio where abonos.idcliente='" + cmbcliente.SelectedValue.Trim + "' " & _
+        " order by fecha2 desc, idcita desc, num_factura desc", gridDatos)
+        habilitaVerfactura()
+    End Sub
+    Sub porFactura()
+        gridDatos.Columns(3).Visible = False
+        gridDatos.Columns(7).Visible = True
+        gridDatos = funciones.creadataset("select elnombre,fecha,' ' as descripcion,sum(abono) as abono,sum(importe) as importe,idabono,fecha2,idcita,num_factura,importefac from " & _
+        "(SELECT clientes.elnombre, convert(varchar(10),factura.fecha,103) as fecha, ' ' as descripcion, " & _
+        "abonos.abono, sum(abonos.importe) - sum(abonos.monto) as importe,' ' as idabono, factura.fecha as fecha2,' ' as idcita,factura.num_factura,importefac FROM  abonos INNER JOIN clientes ON abonos.idCliente = clientes.idCliente " & _
+        "INNER JOIN catCostos ON abonos.idCosto = catCostos.idCosto INNER JOIN  catServicios ON " & _
+        "catServicios.id_servicio = catCostos.id_servicio left join (select num_factura,fecha,sum(importe) as importefac from factura group by num_factura,fecha )" & _
+        " as factura on abonos.num_factura=factura.num_factura where abonos.idcliente='" + cmbcliente.SelectedValue.Trim + "' " & _
+        " group by elnombre,factura.fecha,catServicios.descripcion,abono,importe,idabono,factura.fecha,idcita,factura.num_factura,importefac ) " & _
+        "as temp group by elnombre,fecha,descripcion,idabono,fecha2,idcita,num_factura,importefac order by fecha2 desc,num_factura desc", gridDatos)
+        habilitaVerfactura()
+    End Sub
+    Sub totales()
+        Dim valores(,) As String = funciones.leerValores("select isnull(sum(abono),0.0),isnull(sum(importe),0.0)-isnull(sum(monto),0.0) from abonos where idcliente='" + cmbcliente.SelectedValue.Trim + "'", 2)
+        lblabonos.Text = "$ " + Format(Convert.ToDouble(valores(0, 0)), "###,###,###0.00").ToString.Trim
+        lblImportes.Text = "$ " + Format(Convert.ToDouble(valores(1, 0)), "###,###,###0.00")
+        Dim facturado As String = funciones.leerValor("select isnull(sum(factura.importe),0.0) from factura left join (select distinct num_factura,idcliente from abonos) as abonos on factura.num_factura=abonos.num_factura where abonos.idcliente='" + cmbcliente.SelectedValue.Trim + "'")
+        lblFacturado.Text = "$ " + Format(Convert.ToDouble(facturado), "###,###,###0.00").ToString.Trim
+
+    End Sub
+
+    Protected Sub gridDatos_ItemCommand(ByVal source As Object, ByVal e As System.Web.UI.WebControls.DataGridCommandEventArgs) Handles gridDatos.ItemCommand
+        Try
+            Dim Nombre As String = "c:\reporteFisio\FisioSM\fsm_" + gridDatos.Items(e.Item.ItemIndex).Cells(1).Text.Trim + ".pdf"
+            Response.Clear()
+            Response.ContentType = "application/pdf"
+            Response.AddHeader("Content-disposition", "attachment; filename=" & Nombre)
+            Response.WriteFile(Nombre)
+            Response.Flush()
+            Response.Close()
+        Catch
+            Messagebox1.ShowMessage("NO SE ENCONTRO EL ARCHIVO DE LA FACTURA ...")
+        End Try
+    End Sub
+    Sub habilitaVerfactura()
+        Dim cuenta As Integer = 0
+        Do While cuenta < gridDatos.Items.Count
+            If gridDatos.Items(cuenta).Cells(1).Text.Trim = "&nbsp;" Then
+                CType(gridDatos.Items(cuenta).Cells(8).Controls(1), Button).Visible = False
+            End If
+            cuenta = cuenta + 1
+        Loop
+        If cuenta <> 0 Then
+            Panel1.Visible = True
+        Else
+            Panel1.Visible = False
+        End If
+    End Sub
+End Class

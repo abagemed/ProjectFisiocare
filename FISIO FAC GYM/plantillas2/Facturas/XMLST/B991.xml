@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<cfdi:Comprobante xmlns:xsi="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv3.xsd" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv33.xsd" Version="3.3" Serie="B" Folio="991" Fecha="" Sello="" FormaPago="01" NoCertificado="" Certificado="" Subtotal="350,00" Descuento="406" Moneda="MXN" Total="350" TipoDeComprobante="I" MetodoDePago="PUE" LugarExpedicion="60820" xmlns:cfdi="http://www.sat.gob.mx/cfd/3">
+  <cfdi:Emisor Rfc="AAA010101AAA" Nombre="MATERIALES VILLA VICTORIA" RegimenFiscal="601" />
+  <cfdi:Receptor rfc="ASI1006232B4" nombre="ALQUIMIA SERVICIOS INDUSTRIALES S.A DE C.V" UsoCFDI="P01" />
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="15121500" Cantidad="1" ClaveUnidad="LUB" Unidad="LT" Descripcion="Lubricante Bardal HL" ValorUnitario="200" Importe="200">
+      <cfdi:Impuestos>
+        <cfdi:Traslados>
+          <cfdi:Traslado Base="200" Impuesto="002" TipoFactor="TASA" TasaOCuota="0,016" Importe="32" />
+        </cfdi:Traslados>
+      </cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+</cfdi:Comprobante>

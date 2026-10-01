@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sat.gob.mx/cfd/3 http://www.sat.gob.mx/sitio_internet/cfd/3/cfdv32.xsd" version="3.2" fecha="2017-08-11T12:13:00" folio="10463" serie="FP" formaDePago="PAGO EN UNA SOLA EXHIBICION" sello="Ew0cHsLExful2l20AIt1Q+Ub7rhtLp+ICabMEyVbwYFkbsuf/0DPvFhPQ0YOkYRRIE8U1T+n1k3kCcu2Q911rVjicYaACBwrd08tASPaJLDnsZzCiV11+j2xo8RO9WJ6eRB+mlMtt9W8T35XLURXw9KvBJ3HCOWHN9caDTfCl/M=" noCertificado="00001000000305745366" certificado="MIIEYzCCA0ugAwIBAgIUMDAwMDEwMDAwMDAzMDU3NDUzNjYwDQYJKoZIhvcNAQEFBQAwggGKMTgwNgYDVQQDDC9BLkMuIGRlbCBTZXJ2aWNpbyBkZSBBZG1pbmlzdHJhY2nDs24gVHJpYnV0YXJpYTEvMC0GA1UECgwmU2VydmljaW8gZGUgQWRtaW5pc3RyYWNpw7NuIFRyaWJ1dGFyaWExODA2BgNVBAsML0FkbWluaXN0cmFjacOzbiBkZSBTZWd1cmlkYWQgZGUgbGEgSW5mb3JtYWNpw7NuMR8wHQYJKoZIhvcNAQkBFhBhY29kc0BzYXQuZ29iLm14MSYwJAYDVQQJDB1Bdi4gSGlkYWxnbyA3NywgQ29sLiBHdWVycmVybzEOMAwGA1UEEQwFMDYzMDAxCzAJBgNVBAYTAk1YMRkwFwYDVQQIDBBEaXN0cml0byBGZWRlcmFsMRQwEgYDVQQHDAtDdWF1aHTDqW1vYzEVMBMGA1UELRMMU0FUOTcwNzAxTk4zMTUwMwYJKoZIhvcNAQkCDCZSZXNwb25zYWJsZTogQ2xhdWRpYSBDb3ZhcnJ1YmlhcyBPY2hvYTAeFw0xNDEyMjIxOTMwNDVaFw0xODEyMjIxOTMwNDVaMIGvMRswGQYDVQQDExJPUlRPUEVESUEgU1RBUiBTQ1AxGzAZBgNVBCkTEk9SVE9QRURJQSBTVEFSIFNDUDEbMBkGA1UEChMST1JUT1BFRElBIFNUQVIgU0NQMSUwIwYDVQQtExxPU1QxNDExMjdJRUEgLyBSSUNIODAxMTEwQVEwMR4wHAYDVQQFExUgLyBSSUNIODAxMTEwSFlOVk1SMDcxDzANBgNVBAsTBk1hdHJpejCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAvk79P3wwPi3yPgrQu9WGpQgAdPzIBZXbX67ZvvGr2AfTPqKagNk/KkMSViy2sz3xFsvZ1LHVjuesY/1cV+/5hPIArTkg5hODSfZARLRyydLkHn00na75FjDseTMMG6Xu00VYP1kIt0Q13EJAsDu7+a90EiE8VQpH5qnPK1FbLLkCAwEAAaMdMBswDAYDVR0TAQH/BAIwADALBgNVHQ8EBAMCBsAwDQYJKoZIhvcNAQEFBQADggEBAJnhAN1znUS0t4BtBkuXdV7wzazM3i+agfd7dW22MYTkb4ecVRwc3h3HEfUcEzhtSiNJHDZSeUtjSPkfw5cXOytFjW262uKSjH1bhB8DnhObiroh49ERO66BQQ/wckf1CDnmBYIeKy/y+gdDD1kDOuZqkdjbOLAZz5wgw7FLN+GgiLJOEQ0IlcRzCLehsp4O/GmWH4Eqq5CZdGnxUWSb6ZY3pv43JninaOnvyKtKM/1V3h6da5qIWUrfEAxy/92bdZAeldf4EfxLK2m3fS7Z413TZ+6fdRGnRX4MVyvUGTJ9NLJNWQm2zliIUfUpy/dyhztBACyJxSYvDKrjTOuj/a0=" subTotal="5.00" total="5.00" metodoDePago="1" tipoDeComprobante="ingreso" LugarExpedicion="MÉRIDA,YUCATÁN" TipoCambio="1.0" Moneda="MXP">
+  <cfdi:Emisor rfc="OST141127IEA" nombre="ORTOPEDIA STAR, S.C.P.">
+    <cfdi:DomicilioFiscal calle="26" noExterior="299" noInterior="928" colonia="FRACC. ALTABRISA" localidad="MÉRIDA" municipio="MÉRIDA" estado="YUCATÁN" pais="MEXICO" codigoPostal="97133" />
+    <cfdi:RegimenFiscal Regimen="REGIMEN GENERAL DE LEY PERSONAS MORALES" />
+  </cfdi:Emisor>
+  <cfdi:Receptor rfc="XAXX010101000" nombre="Publico en General">
+    <cfdi:Domicilio calle="Calle 26 X 7 Y 15 No. 299 LT 928 FRACC. ALTABRISA" localidad="Merida" municipio="Merida" estado="Yucatan" pais="Mexico" codigoPostal="97133" />
+  </cfdi:Receptor>
+  <cfdi:Conceptos>
+    <cfdi:Concepto cantidad="1" unidad="No aplica" noIdentificacion="noIdentificacion" descripcion="RETIRO DE YESO" valorUnitario="5.00" importe="5.00">
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos totalImpuestosTrasladados="0.0000" totalImpuestosRetenidos="0.0000">
+    <cfdi:Traslados>
+      <cfdi:Traslado impuesto="IVA" tasa="0" importe="0.0000" />
+    </cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital version="1.0" UUID="70620C0B-2646-41AD-B49D-B9DB4874092F" FechaTimbrado="2017-08-11T12:13:44" selloCFD="Ew0cHsLExful2l20AIt1Q+Ub7rhtLp+ICabMEyVbwYFkbsuf/0DPvFhPQ0YOkYRRIE8U1T+n1k3kCcu2Q911rVjicYaACBwrd08tASPaJLDnsZzCiV11+j2xo8RO9WJ6eRB+mlMtt9W8T35XLURXw9KvBJ3HCOWHN9caDTfCl/M=" noCertificadoSAT="00001000000403498740" selloSAT="T59q3vObrYr/HQxb4bZYI4h79k3zjWNAptAY+3HLH4jdCMexzG5XsitI3eOHnzTAD3LZ0+xa9BCD/nkvB8is8NN29wfAo0rtH1sNlmvEO4BZZVVYmoWlFLEKw68IFqm91Aq/F6sDIrhGYE0afSz5akwtJuuAhGOolfshuTrZeejjCnvz7k8y+DfQmGMRQa6nJokoB9iEf5glHYRRybbnxQI3nAg4zaMxYyJKbSQFD67apyB4gsgg3GqHpaLG0rtV6gtoOMOmitU6PzAMCr8TOfS9tNpFOJf+btP87AqBhV4JOPxO5m1qD3aiQV39FYlAgv7O3n1FaZaT/Kvrykh8zA==" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" xsi:schemaLocation="http://www.sat.gob.mx/TimbreFiscalDigital http://www.sat.gob.mx/TimbreFiscalDigital/TimbreFiscalDigital.xsd" />
+  </cfdi:Complemento>
+</cfdi:Comprobante>

@@ -1,0 +1,142 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="Repconsmed.aspx.vb" Inherits="Repconsmed" %>
+
+<%@ Register Assembly="messagebox" Namespace="messagebox" TagPrefix="cc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+<link href="rsc/estilo.css" rel="stylesheet" type="text/css" />
+    <title>Fisiocare</title>
+</head>
+<body>
+    <center>
+    <form id="form1" runat="server">
+    <div style="width:900px; border: solid 1px #ff0000; font-family:Calibri; font-size:11pt">
+        <img src="imagenes/baner1.png" /><br />
+        <table width="900px" border="1" cellpadding="0" cellspacing="1" bordercolor="#FFFFFF">
+          <tr bordercolor="#7b7b7b" bgcolor="#fc0200">
+            <td align="left" style="width: 610px">
+                <asp:LinkButton ID="LinkButton5" runat="server" Font-Names="calibri" Font-Size="16px"
+                    ForeColor="White" OnClientClick="cierraventana()">| Regresar a Agenda |</asp:LinkButton></td>
+              <td colspan="2" align="right" style="width: 200px">
+                  &nbsp;
+              </td>
+          </tr>
+      </table>
+        <asp:ScriptManager ID="ScriptManager1" runat="server" EnableScriptGlobalization="True" EnableScriptLocalization="True">
+        </asp:ScriptManager>
+       <table border="0" cellpadding="10" cellspacing="0" style="width: 100%; text-align:left">
+            <tr>
+                <td style="width: 100px">
+                    <table border="0" cellpadding="3" cellspacing="0" style="border-right: #f4f4f4 1px solid;
+            border-top: #f4f4f4 1px solid; border-left: #f4f4f4 1px solid; width: 806px;
+            border-bottom: #f4f4f4 1px solid; text-align: center">
+            <tr style="background-color: #f4f4f4">
+                <td style="width: 147px; text-align: left">
+                    <asp:Label ID="Label27" runat="server" ForeColor="#1A3773" Height="20px" Style="border-bottom: #e0e0e0 2px solid"
+                        Text="SELECCIONAR CLIENTE"></asp:Label></td>
+                <td style="background-color: white; text-align: left">
+                    <asp:DropDownList ID="cmbcliente" runat="server" AutoPostBack="True" Width="648px">
+                    </asp:DropDownList></td>
+            </tr>
+        </table>
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <asp:Panel ID="Panel1" runat="server" Visible="False">
+           <table border="0" cellpadding="0" cellspacing="0" style="width: 880px">
+                <tr style="vertical-align:top">
+                    <td style="text-align:left; width: 508px;">
+            <table border="0" cellpadding="0" cellspacing="0" style="width: 400px; margin: auto 0;">
+                <tr >
+                    <td style="background-color: #f4f4f4; color:#1B3774">
+                        Ver datos por</td>
+                    <td style="text-align:left">
+                        <asp:RadioButtonList ID="OPCIONES" runat="server" AutoPostBack="True" RepeatDirection="Horizontal" Width="259px" BorderColor="#F4F4F4" BorderStyle="Solid" BorderWidth="2px">
+                            <asp:ListItem Value="0" Selected="True">Terapias</asp:ListItem>
+                            <asp:ListItem Value="1">Facturas</asp:ListItem>
+                        </asp:RadioButtonList></td>
+                </tr>
+            </table>
+                        <br />
+                        En ocaciones la suma de los importes y la cantidad facturada no son iguales, esto
+                        es debido a que no se agendaron, cerraron o saginaron las terparias correspondientes
+                        a la factura. Verificar con la Suc.</td>
+                    <td style="text-align:right; width: 208px;" >
+                        <table border="0" cellpadding="3" cellspacing="0" style="width: 100%; font-family:Calibri; font-size:14px; margin:0 auto 0 auto;">
+                            <tr>
+                                <td style="width: 73px">
+                                <asp:Button ID="Button1" runat="server" Text="Consultar" CssClass="boton" ForeColor="Red" Height="26px" Width="124px" />
+                                </td>
+                                <td style="background-color: #f4f4f4; color:#1B3774; width: 90px; text-align:left">
+                                    <asp:Label ID="Label3" runat="server" ForeColor="#1A3773" Height="20px" Style="border-bottom: #e0e0e0 2px solid"
+                                        Text="Total Importes" Width="90px"></asp:Label></td>
+                                <td style="width: 65px">
+                                    <asp:Label ID="lblImportes" runat="server" ForeColor="Black" Height="20px" Style="border-bottom: #e0e0e0 2px solid"
+                                        Text="$ 0" Width="60px"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 73px">
+                                </td>
+                                <td style="background-color: #f4f4f4; color:#1B3774; width: 90px;text-align:left">
+                                    <asp:Label ID="Label1" runat="server" ForeColor="#1A3773" Height="20px" Style="border-bottom: #e0e0e0 2px solid"
+                                        Text="Total Facturado" Width="90px"></asp:Label></td>
+                                <td style="width: 65px">
+                                    <asp:Label ID="lblFacturado" runat="server" ForeColor="Black" Height="20px" Style="border-bottom: #e0e0e0 2px solid"
+                                        Text="$ 0" Width="60px"></asp:Label></td>
+                            </tr>
+                            <tr>
+                                <td style="width: 73px">
+                                </td>
+                                <td style="width: 90px; color: #1b3774; background-color: #f4f4f4; text-align: left">
+                                    <asp:Label ID="Label2" runat="server" ForeColor="#1A3773" Height="20px" Style="border-bottom: #e0e0e0 2px solid"
+                                        Text="Total Abonado" Width="90px"></asp:Label></td>
+                                <td style="width: 65px">
+                                    <asp:Label ID="lblabonos" runat="server" ForeColor="Black" Height="20px" Style="border-bottom: #e0e0e0 2px solid"
+                                        Text="$ 0" Width="60px"></asp:Label></td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </asp:Panel><div id="dDatos" runat="server" visible="false"><hr />
+        <asp:Label ID="lblnombre" runat="server" BackColor="#F4F4F4" Font-Names="Calibri"
+            Font-Size="20px" ForeColor="#1A3773" Width="878px" style=" text-align:left" BorderColor="#DEDFDE" BorderStyle="Solid" BorderWidth="1px"></asp:Label>
+        <asp:DataGrid ID="gridDatos" runat="server" AutoGenerateColumns="False" BackColor="White" 
+            BorderColor="#DEDFDE" BorderWidth="1px" CellPadding="4" DataKeyField="idabono"
+            Font-Size="14px" ForeColor="Black" GridLines="None" Width="880px" Font-Names="Calibri">
+            <FooterStyle BackColor="Tan" />
+            <SelectedItemStyle BackColor="DarkSlateBlue" ForeColor="GhostWhite" />
+            <PagerStyle BackColor="PaleGoldenrod" ForeColor="DarkSlateBlue" HorizontalAlign="Center" />
+            <AlternatingItemStyle BackColor="WhiteSmoke" />
+            <Columns>
+                <asp:BoundColumn DataField="idcita" HeaderText="# Recibo"></asp:BoundColumn>
+                <asp:BoundColumn DataField="num_factura" HeaderText="FACTURA"></asp:BoundColumn>
+                <asp:BoundColumn DataField="elnombre" HeaderText="CLIENTE" Visible="False"></asp:BoundColumn>
+                <asp:BoundColumn DataField="descripcion" HeaderText="TERAPIA"></asp:BoundColumn>
+                <asp:BoundColumn DataField="fecha" HeaderText="FECHA"></asp:BoundColumn>
+                <asp:BoundColumn DataField="abono" DataFormatString="{0:C}" HeaderText="ABONOS">
+                    <ItemStyle HorizontalAlign="Center" />
+                </asp:BoundColumn>
+                <asp:BoundColumn DataField="importe" DataFormatString="{0:C}" HeaderText="IMPORTES">
+                    <ItemStyle HorizontalAlign="Center" />
+                </asp:BoundColumn>
+                <asp:BoundColumn DataField="importefac" HeaderText="FACTURADO" DataFormatString="{0:C}"></asp:BoundColumn>
+                <asp:TemplateColumn><ItemStyle HorizontalAlign="Center" />
+                    <ItemTemplate>
+                        <asp:Button ID="Button1" runat="server" CssClass="boton" Font-Bold="False" Font-Names="Calibri"
+                            Font-Size="11pt" ForeColor="Red" Text="Ver Factura" />&nbsp;
+                    </ItemTemplate>
+                </asp:TemplateColumn>
+            </Columns>
+            <HeaderStyle BackColor="#F4F4F4" Font-Bold="False" ForeColor="#1A3773" />
+        </asp:DataGrid></div>
+        <asp:Label ID="lblfechacita" runat="server" Text="Label" Visible="False"></asp:Label>
+        <cc1:messagebox id="Messagebox1" runat="server"></cc1:messagebox>
+    </div>
+    </form>
+</center>
+</body>
+</html>
